@@ -1,0 +1,2834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	attributeFormDefault="qualified" elementFormDefault="qualified"
+	version="2.0.1">
+
+	<!-- fellow XRR schemas -->
+	<xsd:include schemaLocation="http://datafeed.sailing.org/sailingXRR_isafextend.xsd" />
+
+<xsd:annotation>
+		<xsd:documentation>
+			Covers the Person and subordinate elements
+		</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:complexType name="Person">
+		<xsd:annotation>
+			<xsd:documentation>
+				Defines covering information about a person
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="PersonDetails" type="PersonDetails" minOccurs="0" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						a detailed information record of ISAF sailor
+						info
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="RaceOfficialCertification" type="RaceOfficialCertification" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						one element for each ISAF Officiating
+						Certification
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="RegattaResults" type="RegattaResults" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						Regatta result, need only enough to support the
+						SeriesResult.
+						So Regatta, TeamI
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="PersonID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					document-internal identifier for this person.
+					either IFPersonID or PersonID must be specified
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFPersonID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					persistent identifier for the person, usually the
+					ISAF SailorID (see
+					IFSource), either IFPersonID or PersonID must be
+					specified
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="FamilyName" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					Family (Last) name of the person
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="GivenName" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Given (first, familiar) name of the person
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="NOC" type="IFNationCode" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Person's country identity
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Gender" type="PersonGender" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Person's gender
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ClassificationGroup" type="IFCfcnGroup" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Person's classification group (see ISAF
+					Classification Code)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ClassificationStatus" type="IFCfcnStatus" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					the status of the person's classification group
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ClassificationExpiry" type="xsd:date" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					date on which the classification group expires
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ContactPhone" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>
+					a public contact phone for the person
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ContactEmail" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>
+					a public contact email address for the person
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="PersonDetails">
+		<xsd:annotation>
+			<xsd:documentation>
+				Defines detailed biographical information in a
+				sailor bio
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="PrimaryContactInfo" type="ContactInfo" minOccurs="0" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						Primary Contact Info (including current city of
+						residence)
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="AlternateContactInfo" type="ContactInfo" minOccurs="0" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						Secondary Address
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Image" type="PersonImage" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						link to a current sailor image
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SpokenLanguage" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>
+						one element for each language the sailor speaks
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="Hometown" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Original hometown
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="DateOfBirth" type="xsd:date" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Date of Birth
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="PlaceOfBirth" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					City, Country where born
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="MNAMemberNumber" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					name/value information for MNA member numbers
+					name should be MNA Name
+					value should be the MNA member number
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="MaritalStatus" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Marital Status
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Children" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Children info - free form, might be names, might
+					be number
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Occupation" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Occupation
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="YachtClub" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Yacht club - free form, might be multiple clubs
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="YachtClubLocation" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Location of yacht clubs
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Coach" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Name of coach
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="CoachedSince" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					How long the sailor has been coached
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Education" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Education information
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="CampaignWebsite" type="xsd:anyURI" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					The URL of sailor's campaign website
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="BoatFirstSailed" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Boat first sailed
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="StartedSailingAge" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Age at which sailor started sailing
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="CurrentSailingClass" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					one for each class sailor currently sails
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="PreviousSailingClass" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					one for each class sailor has sailed in the past
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="FirstEventWon" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					first event won
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Interests" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					name/value pairs containing geneeral interest
+					information
+					eg "name='Hobbies' value='Hiking' ""
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="PersonImage">
+		<xsd:annotation>
+			<xsd:documentation>
+				Describes an image in a sailor's sailorid profile
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="ImageLink" type="xsd:anyURI" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						URL to the ISAF copy of the image
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="Caption" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>
+					Sailor's caption for the image
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="RaceOfficialCertification">
+		<xsd:annotation>
+			<xsd:documentation>
+				Describes an race officating certification
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="NOC" type="IFNationCode" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Country affiliation for official, only needed if
+					different from MNA above
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Type" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					Officiating type - generally one of
+					'International Umpire', 'International Judge'
+					'International Race
+					Officer', 'International Measurer'
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="FirstApplied" type="xsd:date" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Month and year of initial certification
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Expiry" type="xsd:date" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Month and year of initial certification
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+
+	<xsd:annotation>
+		<xsd:documentation>
+			Tracking related elements - very preliminary
+		</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:complexType name="Course">
+		<xsd:annotation>
+			<xsd:documentation>
+				Describes the course sailed in the race
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="CompoundMark" type="CompoundMark" minOccurs="2" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						A mark or line or gate of the course
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="MarkSequence" type="MarkSequence" minOccurs="1" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						A mark or line or gate of the course
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="CourseID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal id for the course - only needed for
+					contexts outside
+					of a parent regatta element
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFCourseID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					persistent id for the course - only needed for
+					contexts outside
+					of a parent Race element
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RaceID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal id for the race
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFRaceID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					persistent id for the race
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="CourseName" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					name of the course
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="CourseCode" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					a human readable code for identifying the course
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="CompoundMark">
+		<xsd:annotation>
+			<xsd:documentation>
+				A mark or line or gate of the course
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="Mark" type="Mark" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						A single mark, or one end of a line or gate
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="CompoundMarkID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal id for the compound mark
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Name" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					the name for this compound mark. This is the name
+					that should
+					be used in the RaceResult.Mark attribute
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="MarkRounding">
+		<xsd:annotation>
+			<xsd:documentation>
+				shows the time at which each boat passes each non-compund mark
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="SeqID" type="xsd:integer" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					The unique id and order of the mark-corner
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Position" type="xsd:integer" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					The position at which the boat is in the race at the point of passing the mark
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Time" type="xsd:integer" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					The time in seconds since the beginning of the race at which the boat passes the mark
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="Mark">
+		<xsd:annotation>
+			<xsd:documentation>
+				A single mark
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent mixed="false">
+			<xsd:extension base="wptType">
+				<xsd:annotation>
+					<xsd:documentation>
+						wptType has: lat, lon, name for the mark
+					</xsd:documentation>
+				</xsd:annotation>
+				<xsd:choice>
+					<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+						<xsd:annotation>
+							<xsd:documentation>
+								name/value wrapper for additional
+								unstructured
+								information
+							</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:choice>
+				<xsd:attribute name="SeqID" type="xsd:int" use="optional" default="1">
+					<xsd:annotation>
+						<xsd:documentation>
+							The sequential order of mark in the compound
+							sequence: from
+							"port-most" mark to starboard most mark.
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+				<xsd:attribute name="Name" type="xsd:string" use="required">
+					<xsd:annotation>
+						<xsd:documentation>
+							reference name within the doc for the element
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="MarkSequence">
+		<xsd:annotation>
+			<xsd:documentation>
+				the order of marks around the course
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="Corner" type="Corner" minOccurs="2" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						A start, finish, or round mark/gate
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+	</xsd:complexType>
+
+	<xsd:complexType name="Corner">
+		<xsd:annotation>
+			<xsd:documentation>
+				A start, finish, or round mark/gate
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="SeqID" type="xsd:int" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					The sequential order number of the corner in the
+					race. The starting line should
+					be SeqID=1. A SeqID of 0 means it
+					applies at all times (used mostly for boundaries or
+					obstruction
+					areas)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="CompoundMarkID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					Reference to the compound mark
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Rounding" type="RoundingType" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					The rounding information of the mark or gate or
+					area defined by
+					the compoundMark
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ZoneSize" type="xsd:int" use="optional" default="3">
+			<xsd:annotation>
+				<xsd:documentation>
+					The size of the zone
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<!-- adds BoatID and RegattaID to the gpx trktype -->
+
+
+	<!-- - - - - - - - - - - - - - These rest of these elements will intentionally follow very close to the 
+			gpx schema some elements are defined as attributes but names, 
+			contents are taken closely (read cut&paste) from gpx.
+			
+			In this version, wptType is stripped of all gpx except what is strictly needed for Course information
+			we anticipate that future editions will add most of gpx back in
+	 - - - - - - - - - - - - - -->
+
+	<!-- This is pulled directly from gpx//www.topografix.com/GPX/1/1 -->
+	<xsd:complexType name="wptType">
+		<xsd:annotation>
+			<xsd:documentation>
+				wpt represents a waypoint, point of interest, or
+				named feature on a
+				map.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="time" type="xsd:dateTime" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Creation/modification timestamp for element. Date
+					and time in are in Univeral
+					Coordinated Time (UTC), not local time!
+					Conforms to ISO 8601
+					specification for date/time representation.
+					Fractional seconds are
+					allowed for millisecond timing in tracklogs.
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="lat" type="latitudeType" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					The latitude of the point. Decimal degrees, WGS84
+					datum.
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="lon" type="longitudeType" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					The latitude of the point. Decimal degrees, WGS84
+					datum.
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:simpleType name="latitudeType">
+		<xsd:annotation>
+			<xsd:documentation>
+				The latitude of the point. Decimal degrees, WGS84
+				datum.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:decimal">
+			<xsd:minInclusive value="-90.0" />
+			<xsd:maxInclusive value="90.0" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="longitudeType">
+		<xsd:annotation>
+			<xsd:documentation>
+				The longitude of the point. Decimal degrees, WGS84
+				datum.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:decimal">
+			<xsd:minInclusive value="-180.0" />
+			<xsd:maxExclusive value="180.0" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+<xsd:annotation>
+		<xsd:documentation>
+			Covers common sailingXRR elements, enumerations
+		</xsd:documentation>
+	</xsd:annotation>
+
+	<!-- General types -->
+
+	<xsd:simpleType name="RegattaType">
+		<xsd:annotation>
+			<xsd:documentation>
+				Describes the event type
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="IndividualRegatta">
+				<xsd:annotation>
+					<xsd:documentation>
+						Information on an individual regatta
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RegattaSeries">
+				<xsd:annotation>
+					<xsd:documentation>
+						Information on a series of linked regattas
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="DivisionType">
+		<xsd:annotation>
+			<xsd:documentation>
+				Format used for the races in a Division
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="FleetRace">
+				<xsd:annotation>
+					<xsd:documentation>
+						Fleet Racing (what most of sailing is)
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="TeamRace">
+				<xsd:annotation>
+					<xsd:documentation>
+						Team Racing (see RRS Appendix D)
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="MatchRace">
+				<xsd:annotation>
+					<xsd:documentation>
+						Match Racing (see RRS Appendix C)
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="PortStarboard">
+		<xsd:annotation>
+			<xsd:documentation>
+				Used for match race entries and mark rounding
+				sides (at a minimum) or tack
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Port">
+				<xsd:annotation>
+					<xsd:documentation>
+						"left" in layman terms
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Starboard">
+				<xsd:annotation>
+					<xsd:documentation>
+						"right" in layman terms
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="RoundingType">
+		<xsd:annotation>
+			<xsd:documentation>
+				Used in course descriptions to indicate rounding
+				side
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Port">
+				<xsd:annotation>
+					<xsd:documentation>
+						mark to be left to Port
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Starboard">
+				<xsd:annotation>
+					<xsd:documentation>
+						mark to be left to starboard
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Gate">
+				<xsd:annotation>
+					<xsd:documentation>
+						a gate to be sailed between (includes start and
+						finish lines)
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Obstruction">
+				<xsd:annotation>
+					<xsd:documentation>
+						the area (may be > 2 points) is an obstruction
+						area where boats
+						must stay out. If this type of "corner" has a
+						sequence id of 0,
+						it applies throughout the race.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Boundary">
+				<xsd:annotation>
+					<xsd:documentation>
+						the area (may be > 2 points) is a course
+						boundary in which boats must stay.
+						If this type of "corner" has a
+						sequence id of 0,
+						it applies throughout the race.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="PersonGender">
+		<xsd:annotation>
+			<xsd:documentation>Gender as applied to people</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Male">
+				<xsd:annotation>
+					<xsd:documentation>Male</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Female">
+				<xsd:annotation>
+					<xsd:documentation>Female</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="RegattaGender">
+		<xsd:annotation>
+			<xsd:documentation>
+				Gender as applied to an event or division or team
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Men">
+				<xsd:annotation>
+					<xsd:documentation>Men</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Women">
+				<xsd:annotation>
+					<xsd:documentation>Women</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Open">
+				<xsd:annotation>
+					<xsd:documentation>Open - can be either Men or Women
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Mixed">
+				<xsd:annotation>
+					<xsd:documentation>Mixed- must include both Men and Women
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="CrewPosition">
+		<xsd:annotation>
+			<xsd:documentation>
+				The position applied to a crew member on board a
+				vessel
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="S">
+				<xsd:annotation>
+					<xsd:documentation>
+						Skipper, person in charge (see RRS 46)
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="C">
+				<xsd:annotation>
+					<xsd:documentation>
+						Crew, other members of the sailing team
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="HearingRole">
+		<xsd:annotation>
+			<xsd:documentation>
+				Types of participants in a protest hearing
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Protestor">
+				<xsd:annotation>
+					<xsd:documentation>
+						The initiator of the protest or requesting
+						redress
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Protestee">
+				<xsd:annotation>
+					<xsd:documentation>
+						The participant being protested (generally not
+						used in redress
+						requests)
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Witness">
+				<xsd:annotation>
+					<xsd:documentation>
+						A person serving as a witness in a hearing
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="PC">
+				<xsd:annotation>
+					<xsd:documentation>
+						A member of the protest committee for a hearing
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Translator">
+				<xsd:annotation>
+					<xsd:documentation>
+						A person assisting with language translation,
+						used the partipant
+						comment
+						field to give details
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Observer">
+				<xsd:annotation>
+					<xsd:documentation>
+						A person observing but not participating in the
+						hearing
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Other">
+				<xsd:annotation>
+					<xsd:documentation>
+						Other participant, use comments to explain
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="OfficiatingRole">
+		<xsd:annotation>
+			<xsd:documentation>
+				Types of officials at an event
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Organizating Authority">
+				<xsd:annotation>
+					<xsd:documentation>
+						The representative for the organizing authority
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Principal Race Officer">
+				<xsd:annotation>
+					<xsd:documentation>
+						The overall race officer in charge
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Deputy Race Officer">
+				<xsd:annotation>
+					<xsd:documentation>
+						The deputy race officer in charge
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Race Officer">
+				<xsd:annotation>
+					<xsd:documentation>
+						A race officer in charge of a race course, but
+						not the overall race
+						committee
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Race Committee">
+				<xsd:annotation>
+					<xsd:documentation>
+						A member of the race committee (other than PRO
+						or RO). Use comments
+						to further explain if necessary
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Chief Judge">
+				<xsd:annotation>
+					<xsd:documentation>
+						Judge in charge of the protest committee or
+						international jury
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Deputy Chief Judge">
+				<xsd:annotation>
+					<xsd:documentation>
+						Deputy Chief Judge of the protest committee or
+						international jury
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Judge">
+				<xsd:annotation>
+					<xsd:documentation>
+						Other judge
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Chief Umpire">
+				<xsd:annotation>
+					<xsd:documentation>
+						Person in charge of the umpire team
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Deputy Chief Umpire">
+				<xsd:annotation>
+					<xsd:documentation>
+						Deputy Chief of the umpire team
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Umpire">
+				<xsd:annotation>
+					<xsd:documentation>
+						Member of the umpire team
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Chief Measurer">
+				<xsd:annotation>
+					<xsd:documentation>
+						Person in charge of measurement
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Other">
+				<xsd:annotation>
+					<xsd:documentation>
+						Other official, use comments to explain
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="RegattaDocumentTypes">
+		<xsd:annotation>
+			<xsd:documentation>
+				functional types of documents
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Rules_NoticeOfRace" />
+			<xsd:enumeration value="Rules_NoticeOfRaceAmendment" />
+			<xsd:enumeration value="Rules_SailingInstructions" />
+			<xsd:enumeration value="Rules_SailingInstructionAmendment" />
+			<xsd:enumeration value="Rules_Other" />
+			<xsd:enumeration value="Case" />
+			<xsd:enumeration value="Hearing" />
+			<xsd:enumeration value="Other" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="DocumentFormatTypes">
+		<xsd:annotation>
+			<xsd:documentation>
+
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="MSWord" />
+			<xsd:enumeration value="PDF" />
+			<xsd:enumeration value="URI" />
+			<xsd:enumeration value="Text" />
+			<xsd:enumeration value="Image" />
+			<xsd:enumeration value="Other" />
+			<!-- undoubtedly more of these to come -->
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="FilingType">
+		<xsd:annotation>
+			<xsd:documentation>
+				The types of protests/requests for redress that
+				exist
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="ProtestByBoat">
+				<xsd:annotation>
+					<xsd:documentation>
+						Protest by boat against boat
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ProtestByRC">
+				<xsd:annotation>
+					<xsd:documentation>
+						Protest by race committee against boat
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ProtestByPC">
+				<xsd:annotation>
+					<xsd:documentation>
+						Protest by protest committee against boat
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RedressByBoatOrRC">
+				<xsd:annotation>
+					<xsd:documentation>
+						Request for redress by boat or race committee
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="RedressByPC">
+				<xsd:annotation>
+					<xsd:documentation>
+						Consideration of redress by protest committee
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ReopenByBoatOrRC">
+				<xsd:annotation>
+					<xsd:documentation>
+						Request by boat or race committee to reopen
+						hearing
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="ReopenByPC">
+				<xsd:annotation>
+					<xsd:documentation>
+						Consideration of reopening by protest committee
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+			<xsd:enumeration value="Misconduct">
+				<xsd:annotation>
+					<xsd:documentation>
+						Hearing called under rule 69
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+
+	<!-- Object definitions -->
+	<xsd:complexType name="Extra">
+		<xsd:annotation>
+			<xsd:documentation>
+				Defines a supplemental name/value attribute. This can be used
+				to add additional information to elements that are not specifically defined
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence maxOccurs="unbounded" minOccurs="0">
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value information for additional unstructured information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="Name" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					a name for the name/value pair
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Value" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					a value for the name/value pair
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType abstract="true" name="Participant">
+		<xsd:annotation>
+			<xsd:documentation>
+				Parent element for matching people references with
+				various roles
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="PersonID" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>
+					Reference to a person element defined elsewhere
+					in the document
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Comment" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>
+					A free-formatted comment
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="IFInformation">
+		<xsd:annotation>
+			<xsd:documentation>
+				Defines information about the external IF
+				(derivation 'International
+				Federation').
+
+				This type is a preliminary.
+				It could be
+				expanded to contain information
+				identifying web services
+				that can verify,
+				issue, or describe the
+				IFxxxID persistent
+				identifiers.
+
+				In the initial XRR, the source is
+				expected to be ISAF
+				(sailing.org).
+				When a document uses IFxxxID elements, this type
+				describes the source
+				of
+				the persistent IFxxxIDs.
+
+				An IF provider should
+				guarantee that any ID from its source will be
+				unique.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="IFPrefix" type="xsd:string" use="optional" default="sailing.org">
+			<xsd:annotation>
+				<xsd:documentation>
+					prefix that ID's from this source will contain.
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFDefault" type="xsd:boolean" use="optional" default="true">
+			<xsd:annotation>
+				<xsd:documentation>
+					true if this is the default persistent key
+					provider. Only one
+					IFInformation element in a document can be set to
+					true. ID's provided
+					by the default IF do not need a prefix. Other IF
+					sources do. For example
+					if ISAF is the default provider, an ISAF
+					IFxxxID might be '12345'. If a 2nd
+					IFInformation record from source
+					B has prefix of say 'bbb.org' then ID's from the
+					B source would be
+					listed as 'bbb.org132413'
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFLongName" type="xsd:string" use="optional" default="International Sailing Federation">
+			<xsd:annotation>
+				<xsd:documentation>
+					descriptive name for the IF
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFShortName" type="xsd:string" use="optional" default="ISAF">
+			<xsd:annotation>
+				<xsd:documentation>
+					short name for the IF
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ServiceUrl" type="xsd:string" use="optional" default="http://datafeed.sailing.org">
+			<xsd:annotation>
+				<xsd:documentation>
+					url for the source's web services
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="ContactInfo">
+		<xsd:annotation>
+			<xsd:documentation>
+				Address, phone number etc element
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="AddressLine1" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					line 1 of mailing address
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="AddressLine2" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					line 2 of mailing address
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="AddressLine3" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					line 3 of mailing address
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="City" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					City name
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Province" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					State, Province or County as necessary
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="PostalCode" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					postal code
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Country" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Country name
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="DayPhone" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Daytime Phone Number
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="EveningPhone" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Evening Phone Number
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="MobilePhone" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Mobile Phone Number
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Fax" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Fax number
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Email" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Fax number
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+<xsd:annotation>
+		<xsd:documentation>
+			Information about a boat - trivial for now,
+			anticipating that
+			someday it will extend to include measurement/rating
+			and other information
+		</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:complexType name="Boat">
+		<xsd:annotation>
+			<xsd:documentation>
+				Defines a boat as in the hull, sails etc (not the
+				racing rules concept of a
+				boat)
+				This type may be extended
+				significantly in the future to accomodate
+				ratings, measurement
+				information.
+				For now it is specified only as needed to support the
+				current XRR needs
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="BoatID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					document-internal identifier for this boat
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFBoatID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					persistent identifier for the boat (not yet
+					supported by ISAF)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="BoatName" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Name of the boat
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="SailNumber" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					the sail number (a free formatted string to
+					include country code,
+					numbers, whatever)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:annotation>
+		<xsd:documentation>
+			Covering schema for defining all of sailingXRR
+			version 2.0.1
+
+			This version is backward compatible with 1.3 with the
+			following exceptions:
+			
+			a) Event, EventID, EventType have been RENAMED Regatta, 
+				RegattaID, RegattaType so 'event' is  no longer in 
+				XRR.  This avoids a long-standing conflict between 
+				the  Olympic/SWC use of the term "event" (for 
+				a class)  and the rest of the worlds use of the 
+				term (for a regatta).
+			
+			b) in RegattaType - the type called "Regatta" has been
+				 renamed by "Individual Regatta" so to avoid using 
+				 'Regatta' in two different contexts.
+			
+			c) all custom formatted date and time elements/attributes 
+				have been replaced by equivalent xml standard dateTime 
+				elements in a couple cases, the old non-standard 
+				date/time attribute has deleted and a standard 
+				date/time attribute with a different name has 
+				been added.
+				
+			Note: we are well underway on developing extensions
+			to support jury administration and tracking but did
+			not want to hold up release of 2.0.1 to finalize those.
+			They should be part of 2.1.
+		</xsd:documentation>
+	</xsd:annotation>
+
+		<xsd:complexType name="Crew">
+		<xsd:annotation>
+			<xsd:documentation>
+				Boat crew (combines participant with the
+				CrewPosition enumeration)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent mixed="false">
+			<xsd:extension base="Participant">
+				<xsd:attribute name="Position" type="CrewPosition" use="required">
+					<xsd:annotation>
+						<xsd:documentation>
+							the person's role on the crew
+						</xsd:documentation>
+					</xsd:annotation>
+				</xsd:attribute>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="RegattaOfficial">
+		<xsd:annotation>
+			<xsd:documentation>
+				Officials at an event
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent mixed="false">
+			<xsd:extension base="Participant">
+				<xsd:attribute name="OfficiatingRole" type="OfficiatingRole" use="required" />
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="Division">
+		<xsd:annotation>
+			<xsd:documentation>
+				Grouping of a set of teams into scoring/racing
+				groups. Including their
+				individual race
+				results and points.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice minOccurs="0" maxOccurs="unbounded">
+			<xsd:element name="RaceResult" type="RaceResult" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						result entries at the various marks around the
+						course, depending on the
+						"Mark" attribute: Mark="Start" indicates a
+						starting result and should be used to list the boats
+						starting in a
+						race; Mark="Finish" indicates the results at the finishing mark
+						and therefore the
+						boat's race finish; Mark set to names of other
+						marks indicate a rounding result at that
+						mark
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="SeriesResult" type="SeriesResult" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						A result representing overall series points
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="TRResult" type="TRResult" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						Team racing only: contains the team score for a
+						race.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="Type" type="DivisionType" use="optional" default="FleetRace">
+			<xsd:annotation>
+				<xsd:documentation>
+					Type of racing for this division (fleet, match or
+					team racing)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="DivisionID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					document-internal identifier for this division
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFDivisionID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					persistent identifier for this division
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Title" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					name of the division
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFClassID" type="IFClassCode" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					persistent identifier for the boat class (or
+					equipment) for this division
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Gender" type="RegattaGender" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					gender restrictions on entries
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Disabled" type="xsd:boolean" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					true if division is organised for disabled
+					sailors
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ParentDivision" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					if this is a subdivision of another division,
+					then this is the ID of the parent division
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="StartingDivision" type="xsd:boolean" use="optional" default="true">
+			<xsd:annotation>
+				<xsd:documentation>
+					true if races will be run with this division as a
+					starting class, false if it
+					is just a scoring division. For example,
+					when Lasers are split into Yellow and Blue
+					for qualifying, the Laser
+					division would not be a starting division, but Yellow and
+					Blue would
+					be starting divisions. As another example, suppose there was a
+					Masters trophy within a J22 class. The Masters division would not
+					be a starting division by the j22 division would be.
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RankingDivision" type="xsd:boolean" use="optional" default="true">
+			<xsd:annotation>
+				<xsd:documentation>
+					true if the series positions should be calculated
+					for this division. false otherwise
+					For example, when Lasers are
+					split into Yellow and Blue
+					for qualifying, the Laser division would
+					be a ranking division, but Yellow and
+					Blue would not be.
+					As another
+					example, for a Masters trophy within the J22 division, both the
+					Masters and the J22 division would be 'rankingDivisions'
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="Team">
+		<xsd:sequence>
+			<xsd:element name="Crew" type="Crew" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						Crew members that make up the team
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="TeamID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal unique id for the team
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFTeamID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					IF external stable ID for the team
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="BoatID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					The internal unique ID for the Boat. If not
+					present here
+					then either the Entry record needs to link a team to a
+					boat
+					or (if the boat changes race to race) the individual RaceResult
+					elements need to have both a TeamID and a BoatID
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="NOC" type="IFNationCode" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					The IOC national code of the Team
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="TeamName" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Team name
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Gender" type="RegattaGender" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Gender of team
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="Entry">
+		<xsd:choice>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="EntryID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal identifier for the entry
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFEntryID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					external stable identifier for the entry
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RankingDivisionID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal id of the ranking division for the entry
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="TeamID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal id of the team for the entry
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="BoatID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal id of the boat for the entry. This can
+					optionally be specified in the
+					team element or if boat changes race
+					to race can be specified along with the
+					team id in the race result
+					record
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="BowNumber" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					"bow" number or alternate visible id for the
+					entry for this event
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RegistrationComplete" type="xsd:boolean" use="optional" default="true">
+			<xsd:annotation>
+				<xsd:documentation>
+					true if the registration is complete for this
+					entry. This should
+					mean that the entry is approved to race and be
+					scored.
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RegistrationID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					id for the entry's registion information
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="Registration">
+		<xsd:annotation>
+			<xsd:documentation>
+				Preliminary type for (in future editions)
+				specifying registration/measurement
+				information
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="RegistrationItem" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value information for list of registration
+						requirements
+						that are unique to an individual regatta. For example,
+						an item might
+						have name='SkipperWeight1' and a value='167' for the
+						skippers weight
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="RegistrationID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal identifier for the registion element
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFRegistrationID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					external stable identifier for the registion
+					element
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="EntryID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					the entry id for this registration element
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="Race">
+		<xsd:annotation>
+			<xsd:documentation>
+				info about a single race (one start) within a
+				regatta
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="Course" type="Course" minOccurs="0" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						Describes the course sailed in the race
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="RaceID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal id for the race
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFRaceID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					external stable id for the race
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RaceNumber" type="xsd:integer" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					race number, its order in the series
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RaceName" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					A name to apply to the Race (if one is present)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="StartScheduled" type="xsd:dateTime" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Date/time on which race is to scheduled to be
+					started
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="StartActual" type="xsd:dateTime" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Date/time on which race was started
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RaceStatus" type="IFRaceStatus" use="optional" default="final">
+			<xsd:annotation>
+				<xsd:documentation>
+					Status of the race, default of final presumes end
+					of regatta use only
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Stage" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					ID of the stage for this race
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Flight" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					For match racing only, the flight number/name of
+					this race
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Match" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					For match racing only, the match number/name for
+					this race
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="RaceResult">
+		<xsd:annotation>
+			<xsd:documentation>
+				Information that applies to results of a race -
+				either mark rounding or finish
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="MarkRounding" type="MarkRounding" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						A list of mark rounding positions and times for when a race is either in progress or ended
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>			
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Crew" type="Crew" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						Optional, can be used if crew sailing a boat in a race for a team
+						varies from race to race
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="RaceID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal id of race for this result
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="BoatID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal id of boat for this result. Boats can be
+					assigned
+					in several ways: if a team sails the same boat throughout a
+					regatta
+					then the boat/team link should be made in either the Team
+					element
+					or in the Entry element. If so, then either a boatID or
+					teamID - but
+					not both is needed here. IF the team may race different
+					boats in
+					different races - then both a boatID and teamID are needed
+					in this
+					race
+					result element.
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="TeamID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal id of team for this result, see
+					documentation for 'BoatID'
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="MREntrySide" type="PortStarboard" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					for match racing, "Start" results, specifies the
+					entering side for
+					the boat/team in the race
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RaceRank" type="xsd:positiveInteger" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					raw order rank of the boat/team at this
+					mark/finish
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Time" type="xsd:dateTime" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					marks and finishes: time of the mark rounding
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RacePoints" type="xsd:decimal" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					finishes only: boat's score in the race
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Discard" type="xsd:boolean" use="optional" default="false">
+			<xsd:annotation>
+				<xsd:documentation>
+					finishes only: whether or not this race is
+					discarded in the team's series calculations
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ScoreCode" type="IFBoatStatus" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					finishes only: : Scoring code (penalties for this
+					race)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RecordingMethod" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					used to indicate whether the result recording was
+					done manually
+					or by an automated system. Expect that 'manual' will
+					be done
+					for common manual recording by the RC. Or a name of an
+					automated
+					tracking system that determined the order might be used.
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="SeriesResult">
+		<xsd:choice>
+			<xsd:element name="Prize" type="PrizeType" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						for cash prizes, or prizes of significant value,
+						the type of the prize
+						if a prizeValue is given, but not a type, the
+						default type is cash
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="TeamID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					team ID of this series result
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="StageID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					HOLD FOR FUTURE: Stage of the series result
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="NetPoints" type="xsd:decimal" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					net points (with discards excluded) for the
+					series
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="TotalPoints" type="xsd:decimal" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					total points (sum of all points, including
+					discards)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Tied" type="xsd:boolean" use="optional" default="false">
+			<xsd:annotation>
+				<xsd:documentation>
+					true if the team is tied with another team on
+					series standing
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Rank" type="xsd:positiveInteger" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					rank of the team in the series
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="PrizeType">
+		<xsd:annotation>
+			<xsd:documentation>
+				describes prizes of significant value that affect
+				a sailors' classification
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:attribute name="PersonID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Identifies the Person on the team receiving the
+					prize.
+					If blank, then presume its a team award with no information
+					on distribution within the team
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Cash" type="xsd:boolean" default="true" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					true if prize is cash, false is something else
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="OtherType" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Describe prize if not cash
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="EuroValue" type="xsd:positiveInteger" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					Value in EUROS(!) of the prize
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="Stage">
+		<xsd:annotation>
+			<xsd:documentation>
+				For multi-stage events, this type describes a
+				stage. This element is
+				preliminary and may not be stable in future
+				editions of XRR
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice minOccurs="1" maxOccurs="unbounded">
+			<xsd:element name="DivisionID" type="xsd:string">
+				<xsd:annotation>
+					<xsd:documentation>
+						the internal id of the division(s) that compete
+						in this stage
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="StageID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					internal id for the stage
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="StageName" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					descriptive name of the stage
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IsQualifying" type="xsd:boolean" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					true if this is a qualifying stage (an early
+					stage in which teams may
+					be divided and redivided false for
+					intermediate/final stages where all teams in one stage (eg
+					gold)
+					will rank above another stage (eg silver)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="PrecedingStageID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					for intermediate/final stages, the id of the
+					preceding stage
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="StageRank" type="xsd:int" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					for intermediate/final stage, the rank of the
+					stage relative to other
+					stages. The higher the number the higher
+					(better) the rank.. Gold might be 100, Silver 90,
+
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="TRResult">
+		<xsd:annotation>
+			<xsd:documentation>
+				team racing only contains the summary point
+				information for a team's
+				combined result in a race
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="RaceID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					document internal id of the race
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="TeamID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					document internal id of the team
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="NetPoints" type="xsd:decimal" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					net points for the team in the race (for example
+					if the team got 1,2,5
+					their net points would be 8)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="TeamPoints" type="xsd:decimal" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					team points for series scoring - usually 1 (for a
+					win) or 0 for a loss.
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Rank" type="xsd:decimal" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					team's rank in the team race (for typical team
+					racing involving two teams
+					in each race, this would be either 1 or
+					2)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="RegattaSeriesResult">
+		<xsd:annotation>
+			<xsd:documentation>
+				results information for a series that is a
+				combination of results from other events
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice minOccurs="1" maxOccurs="unbounded">
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="RegattaSeriesID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					local id of the events contained in this series
+					result. This should be
+					used if the individual event info is
+					contained in the document
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFRegattaSeriesID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					persistent id of the events contained in this
+					series result. this should be
+					used if
+					the individual event
+					information is not contained in the document
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFRegattaID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					persistent id of the events contained in this
+					series result. this should be
+					used if
+					the individual event
+					information is not contained in the document
+					Either RegattaID or
+					IFRegattaID are required
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="RegattaID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					local id of the events contained in this series
+					result. This should be
+					used if the individual event info is
+					contained in the document.
+					Either RegattaID or IFRegattaID are
+					required
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="TeamID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					local id of the team
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="TotalPoints" type="xsd:decimal" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					total points across all events in the series for
+					the team
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Rank" type="xsd:positiveInteger" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					rank of the team across all events in the series
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="Regatta">
+		<xsd:annotation>
+			<xsd:documentation>
+				information about a single competition (aka a
+				regatta)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice maxOccurs="unbounded" minOccurs="1">
+			<xsd:element name="Race" type="Race" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						information about a race in the event
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Division" type="Division" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						information about each division in the event
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Entry" type="Entry" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						information a regatta's entries
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Registration" type="Registration" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						zero or more registration elements - if used
+						should be 1 per entry
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="RegattaSeriesResult" type="RegattaSeriesResult" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						if the event type is a regattaseries, then this
+						includes these are
+						the teams series results
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Officials" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						officials involved in the event
+					</xsd:documentation>
+				</xsd:annotation>
+				<xsd:complexType>
+					<xsd:choice maxOccurs="unbounded" minOccurs="1">
+						<xsd:element name="Official" type="RegattaOfficial" minOccurs="0" maxOccurs="unbounded" />
+					</xsd:choice>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="RegattaID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					local document id of the event
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFRegattaID" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					persistent id of the event
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Type" type="RegattaType" use="optional" default="IndividualRegatta">
+			<xsd:annotation>
+				<xsd:documentation>
+					type of event, currently only support Regatta or
+					RegattaSeries
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Title" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					descriptive name of the event
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="IFUploadCode" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					a pass-key allowing automatic persistence of the document content on upload
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="RegattaResults">
+		<xsd:annotation>
+			<xsd:documentation>
+				the results of a regatta. NOTE that this could be
+				used to transmit
+				an entire regatta's results or the results for a
+				subset of the regatta
+				(such as an individual sailor's results)
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice maxOccurs="unbounded" minOccurs="1">
+			<xsd:element name="Person" type="Person" maxOccurs="unbounded" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						the persons involved in the event, regardless of
+						their capacity
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Boat" type="Boat" maxOccurs="unbounded" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						information on the boats competing.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Team" type="Team" maxOccurs="unbounded" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						information on a team in the event
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+
+			<xsd:element name="Regatta" type="Regatta" maxOccurs="unbounded" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						the event, races, divisions, and results
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="DateTime" type="xsd:dateTime" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					Time/date of the report as standard xml datetime
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Version" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					XRR version of the document. Preferably the
+					appropriate
+					XRR schema should be referenced by the document. But if
+					not
+					then this should be used to identify the appropriate xrr version
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:complexType name="RegattaDocument">
+		<xsd:annotation>
+			<xsd:documentation>
+				Covering/common elements/attributes for documents
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:element name="Other" type="Extra" minOccurs="0" maxOccurs="unbounded">
+				<xsd:annotation>
+					<xsd:documentation>
+						name/value wrapper for additional
+						unstructured
+						information
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="Body" type="xsd:string" minOccurs="0" maxOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						the body of the regatta document, may be a CDATA
+						block of binary information
+						or html or plain text as stated in
+						DocumentFormat
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:choice>
+		<xsd:attribute name="DocumentID" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					unique if for the document
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="DocumentType" type="RegattaDocumentTypes" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					type of document (SI, NOR, Amendment, etc, etc)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="DocumentFormat" type="DocumentFormatTypes" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					format of the document (html, pdf, text)
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="DocumentLink" type="xsd:anyURI" use="optional">
+			<xsd:annotation>
+				<xsd:documentation>
+					url link to the document if not embedded
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Title" type="xsd:string" use="required">
+			<xsd:annotation>
+				<xsd:documentation>
+					descriptive title of the document
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Published" type="xsd:dateTime">
+			<xsd:annotation>
+				<xsd:documentation>
+					date/time document published
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="Received" type="xsd:dateTime">
+			<xsd:annotation>
+				<xsd:documentation>
+					date/time document received
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+		<xsd:attribute name="ReceivedBy" type="xsd:string">
+			<xsd:annotation>
+				<xsd:documentation>
+					free form name of person receiving the document
+				</xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
+	</xsd:complexType>
+
+	<xsd:simpleType name="CourseLegType">
+		<xsd:annotation>
+			<xsd:documentation>Types of legs on a race course</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Start" />
+			<xsd:enumeration value="Beat" />
+			<xsd:enumeration value="Reach" />
+			<xsd:enumeration value="Run" />
+			<xsd:enumeration value="Finish" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:element name="SailingXRR" type="RegattaResults">
+		<xsd:annotation>
+			<xsd:documentation>
+				DEPRECATED. Top element for a single set of event
+				results. Please use RegattaResult instead.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+
+	<xsd:element name="RegattaResult" type="RegattaResults">
+		<xsd:annotation>
+			<xsd:documentation>
+				Contains full set of regatta results
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+
+</xsd:schema>

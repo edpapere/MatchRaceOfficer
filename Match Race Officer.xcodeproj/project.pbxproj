@@ -13,6 +13,16 @@
 		55F3D1EB2554A04E00356859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D1E92554A04E00356859 /* Main.storyboard */; };
 		55F3D1ED2554A04F00356859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D1EC2554A04F00356859 /* Assets.xcassets */; };
 		55F3D1F02554A04F00356859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D1EE2554A04F00356859 /* LaunchScreen.storyboard */; };
+		55F3D1FA2554DBF000356859 /* sailingXRRv1.3.1_fleet_example.xml in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D1F92554DBF000356859 /* sailingXRRv1.3.1_fleet_example.xml */; };
+		55F3D1FD2554DBFB00356859 /* sailingXRRv1.3.1_match_example.xml in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D1FC2554DBFB00356859 /* sailingXRRv1.3.1_match_example.xml */; };
+		55F3D2002554DC2200356859 /* sailingXRRv1.3.1_fleet_example_short.xml in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D1FF2554DC2200356859 /* sailingXRRv1.3.1_fleet_example_short.xml */; };
+		55F3D2032554DC5000356859 /* sailingXRRv1.3.1_team_example.xml in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D2022554DC5000356859 /* sailingXRRv1.3.1_team_example.xml */; };
+		55F3D2062554DC9000356859 /* sailingXRR_v1.3.1_fleet_fullresults.xml in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D2052554DC9000356859 /* sailingXRR_v1.3.1_fleet_fullresults.xml */; };
+		55F3D2092554DCA600356859 /* sailingXRR_v1.3.1_fleet_rankonly.xml in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D2082554DCA600356859 /* sailingXRR_v1.3.1_fleet_rankonly.xml */; };
+		55F3D20C2554DCD900356859 /* sailingXRR_v1.3.1.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D20B2554DCD900356859 /* sailingXRR_v1.3.1.xsd */; };
+		55F3D20F2554DD1C00356859 /* sailingXRR_v2.0.1.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D20E2554DD1C00356859 /* sailingXRR_v2.0.1.xsd */; };
+		55F3D2122554DD4400356859 /* sailingXRR_v1.3.xsd in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D2112554DD4400356859 /* sailingXRR_v1.3.xsd */; };
+		55F3D2172554DECA00356859 /* ISAF XRR v1.3.1 Technical Specfication.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 55F3D2162554DECA00356859 /* ISAF XRR v1.3.1 Technical Specfication.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		55F3D1EC2554A04F00356859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F3D1EF2554A04F00356859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F3D1F12554A04F00356859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F3D1F92554DBF000356859 /* sailingXRRv1.3.1_fleet_example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sailingXRRv1.3.1_fleet_example.xml; sourceTree = "<group>"; };
+		55F3D1FC2554DBFB00356859 /* sailingXRRv1.3.1_match_example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sailingXRRv1.3.1_match_example.xml; sourceTree = "<group>"; };
+		55F3D1FF2554DC2200356859 /* sailingXRRv1.3.1_fleet_example_short.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sailingXRRv1.3.1_fleet_example_short.xml; sourceTree = "<group>"; };
+		55F3D2022554DC5000356859 /* sailingXRRv1.3.1_team_example.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sailingXRRv1.3.1_team_example.xml; sourceTree = "<group>"; };
+		55F3D2052554DC9000356859 /* sailingXRR_v1.3.1_fleet_fullresults.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sailingXRR_v1.3.1_fleet_fullresults.xml; sourceTree = "<group>"; };
+		55F3D2082554DCA600356859 /* sailingXRR_v1.3.1_fleet_rankonly.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sailingXRR_v1.3.1_fleet_rankonly.xml; sourceTree = "<group>"; };
+		55F3D20B2554DCD900356859 /* sailingXRR_v1.3.1.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sailingXRR_v1.3.1.xsd; sourceTree = "<group>"; };
+		55F3D20E2554DD1C00356859 /* sailingXRR_v2.0.1.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sailingXRR_v2.0.1.xsd; sourceTree = "<group>"; };
+		55F3D2112554DD4400356859 /* sailingXRR_v1.3.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sailingXRR_v1.3.xsd; sourceTree = "<group>"; };
+		55F3D2162554DECA00356859 /* ISAF XRR v1.3.1 Technical Specfication.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "ISAF XRR v1.3.1 Technical Specfication.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 		55F3D1E22554A04E00356859 /* Match Race Officer */ = {
 			isa = PBXGroup;
 			children = (
+				55F3D1F82554DBB900356859 /* ISAF XRR Schema */,
 				55F3D1E32554A04E00356859 /* AppDelegate.swift */,
 				55F3D1E52554A04E00356859 /* SceneDelegate.swift */,
 				55F3D1E72554A04E00356859 /* ViewController.swift */,
@@ -65,6 +86,23 @@
 				55F3D1F12554A04F00356859 /* Info.plist */,
 			);
 			path = "Match Race Officer";
+			sourceTree = "<group>";
+		};
+		55F3D1F82554DBB900356859 /* ISAF XRR Schema */ = {
+			isa = PBXGroup;
+			children = (
+				55F3D2162554DECA00356859 /* ISAF XRR v1.3.1 Technical Specfication.pdf */,
+				55F3D2112554DD4400356859 /* sailingXRR_v1.3.xsd */,
+				55F3D20E2554DD1C00356859 /* sailingXRR_v2.0.1.xsd */,
+				55F3D20B2554DCD900356859 /* sailingXRR_v1.3.1.xsd */,
+				55F3D2022554DC5000356859 /* sailingXRRv1.3.1_team_example.xml */,
+				55F3D1FF2554DC2200356859 /* sailingXRRv1.3.1_fleet_example_short.xml */,
+				55F3D2082554DCA600356859 /* sailingXRR_v1.3.1_fleet_rankonly.xml */,
+				55F3D2052554DC9000356859 /* sailingXRR_v1.3.1_fleet_fullresults.xml */,
+				55F3D1FC2554DBFB00356859 /* sailingXRRv1.3.1_match_example.xml */,
+				55F3D1F92554DBF000356859 /* sailingXRRv1.3.1_fleet_example.xml */,
+			);
+			path = "ISAF XRR Schema";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +162,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F3D2002554DC2200356859 /* sailingXRRv1.3.1_fleet_example_short.xml in Resources */,
+				55F3D20C2554DCD900356859 /* sailingXRR_v1.3.1.xsd in Resources */,
+				55F3D2092554DCA600356859 /* sailingXRR_v1.3.1_fleet_rankonly.xml in Resources */,
+				55F3D20F2554DD1C00356859 /* sailingXRR_v2.0.1.xsd in Resources */,
 				55F3D1F02554A04F00356859 /* LaunchScreen.storyboard in Resources */,
+				55F3D2062554DC9000356859 /* sailingXRR_v1.3.1_fleet_fullresults.xml in Resources */,
+				55F3D2032554DC5000356859 /* sailingXRRv1.3.1_team_example.xml in Resources */,
+				55F3D1FA2554DBF000356859 /* sailingXRRv1.3.1_fleet_example.xml in Resources */,
 				55F3D1ED2554A04F00356859 /* Assets.xcassets in Resources */,
 				55F3D1EB2554A04E00356859 /* Main.storyboard in Resources */,
+				55F3D2122554DD4400356859 /* sailingXRR_v1.3.xsd in Resources */,
+				55F3D1FD2554DBFB00356859 /* sailingXRRv1.3.1_match_example.xml in Resources */,
+				55F3D2172554DECA00356859 /* ISAF XRR v1.3.1 Technical Specfication.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

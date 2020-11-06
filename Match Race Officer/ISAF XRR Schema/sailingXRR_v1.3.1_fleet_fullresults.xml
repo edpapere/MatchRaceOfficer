@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SailingXRR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DateTime="2015-06-24T10:45:44" Type="SailingXRR" Version="1.3.1" xsi:noNamespaceSchemaLocation="http://www.sailing.org/uploads/xml/sailingXRR_v1.3.1.xsd">
+		<Person PersonID="1" NOC="USA" IFPersonID="USAGG60" FamilyName="Gamble" GivenName="George"/>
+  <Person PersonID="2" NOC="USA" IFPersonID="USAMP76" FamilyName="Pedersen" GivenName="Mike"/>
+  <Person PersonID="3" NOC="USA" IFPersonID="USASN4" FamilyName="Nixon" GivenName="Scott"/>
+  <Person PersonID="4" NOC="USA" IFPersonID="USAIC11" FamilyName="Coleman" GivenName="Ian"/>
+  <Person PersonID="5" NOC="AUS" IFPersonID="AUSKS6" FamilyName="Searle" GivenName="Keiran"/>
+  <Person PersonID="6" NOC="USA" IFPersonID="USAJR192" FamilyName="Raines" GivenName="Scott"/>
+  <Person PersonID="7" NOC="USA" IFPersonID="USAKG44" FamilyName="Gamble" GivenName="Kyle"/>
+  <Person PersonID="8" NOC="IRL" IFPersonID="IRLKG3" FamilyName="Glynn" GivenName="Keith"/>
+  <Person PersonID="9" NOC="USA" IFPersonID="USASH82" FamilyName="Henderson" GivenName="Steve"/>
+  <Person PersonID="10" NOC="USA" IFPersonID="USATR38" FamilyName="Roop" GivenName="Tom"/>
+  <Person PersonID="11" NOC="USA" IFPersonID="USADG74" FamilyName="Gerber" GivenName="Dave"/>
+  <Person PersonID="12" NOC="USA" IFPersonID="USAKG8" FamilyName="Gottwald" GivenName="Karen"/>
+  <Person PersonID="13" NOC="USA" IFPersonID="USAMM128" FamilyName="Mayer" GivenName="Mike"/>
+  <Person PersonID="14" NOC="CAN" IFPersonID="CANTS14" FamilyName="Shambrook" GivenName="Tim"/>
+  <Person PersonID="15" NOC="USA" IFPersonID="USAKS113" FamilyName="Snow" GivenName="Kate"/>
+  <Person PersonID="16" NOC="USA" IFPersonID="USANB41" FamilyName="Blacker" GivenName="Noah"/>
+  <Person PersonID="17" NOC="USA" IFPersonID="USARH68" FamilyName="Hesse" GivenName="Bob"/>
+  <Person PersonID="18" NOC="USA" IFPersonID="USASL36" FamilyName="Liebel" GivenName="Steve"/>
+  <Person PersonID="19" NOC="USA" IFPersonID="USAMK30" FamilyName="Kullman" GivenName="Marty"/>
+  <Person PersonID="20" NOC="USA" IFPersonID="USACH65" FamilyName="Hesse" GivenName="Christopher"/>
+  <Person PersonID="21" NOC="USA" IFPersonID="USAJG18" FamilyName="Goller" GivenName="John"/>
+  <Person PersonID="22" NOC="USA" IFPersonID="USAGT26" FamilyName="Tisdale" GivenName="Gary"/>
+  <Person PersonID="23" NOC="USA" IFPersonID="USAMO21" FamilyName="Obersheimer" GivenName="Mike"/>
+  <Person PersonID="24" NOC="USA" IFPersonID="USAHN11" FamilyName="Noble" GivenName="Hillary"/>
+  <Person PersonID="25" NOC="USA" IFPersonID="USARL22" FamilyName="Lehmann" GivenName="Richard"/>
+  <Person PersonID="26" NOC="USA" IFPersonID="USABB33" FamilyName="Burley" GivenName="Bryan"/>
+  <Person PersonID="27" NOC="USA" IFPersonID="USAWC26" FamilyName="Cross" GivenName="Wally"/>
+  <Person PersonID="28" NOC="USA" IFPersonID="USAMJ15" FamilyName="Jensen" GivenName="Marty"/>
+  <Person PersonID="29" NOC="USA" IFPersonID="USAMJ59" FamilyName="Johnson" GivenName="Michael"/>
+  <Person PersonID="30" NOC="NZL" IFPersonID="NZLPL4" FamilyName="Lawrence" GivenName="Paul"/>
+  <Person PersonID="31" NOC="USA" IFPersonID="USATT59" FamilyName="Trautman" GivenName="Tom"/>
+  <Person PersonID="32" NOC="USA" IFPersonID="USARR79" FamilyName="Ruhlman" GivenName="Rob"/>
+  <Person PersonID="33" NOC="USA" IFPersonID="USADM34" FamilyName="Moose" GivenName="Doug"/>
+  <Person PersonID="34" NOC="USA" IFPersonID="USAAR7" FamilyName="Ruhlman" GivenName="Abby"/>
+  <Person PersonID="35" NOC="USA" IFPersonID="USAJR106" FamilyName="Ruhlman" GivenName="J. Ryan"/>
+  <Person PersonID="36" NOC="USA" IFPersonID="USAMR49" FamilyName="Ruhlman" GivenName="Maegan"/>
+  <Person PersonID="37" NOC="USA" IFPersonID="USAJS78" FamilyName="Sminchak" GivenName="Jim"/>
+  <Person PersonID="38" NOC="USA" IFPersonID="USANT5" FamilyName="Turney" GivenName="Nick"/>
+  <Person PersonID="39" NOC="USA" IFPersonID="USAMW75" FamilyName="Wiss" GivenName="Mark"/>
+  <Person PersonID="40" NOC="USA" IFPersonID="USADT73" FamilyName="Tortorello" GivenName="David"/>
+  <Person PersonID="41" NOC="USA" IFPersonID="USAMA78" FamilyName="Andre" GivenName="Mike"/>
+  <Person PersonID="42" NOC="USA" IFPersonID="USADB185" FamilyName="Buchalter" GivenName="Darin"/>
+  <Person PersonID="43" NOC="GER" IFPersonID="GERLL11" FamilyName="Lange" GivenName="Lutz"/>
+  <Person PersonID="44" NOC="USA" IFPersonID="USAKM138" FamilyName="Morrison" GivenName="Kerry"/>
+  <Person PersonID="45" NOC="USA" IFPersonID="USAPS128" FamilyName="Spinelli" GivenName="Phil"/>
+  <Person PersonID="46" NOC="USA" IFPersonID="USAMT57" FamilyName="Tortorello" GivenName="Maryellen"/>
+  <Person PersonID="47" NOC="USA" IFPersonID="USASW10" FamilyName="Wijsen" GivenName="Seadon"/>
+  <Person PersonID="48" NOC="GBR" IFPersonID="GBRMD62" FamilyName="Dent" GivenName="Martin"/>
+  <Person PersonID="49" NOC="USA" IFPersonID="USACC192" FamilyName="Caliban" GivenName="Colin"/>
+  <Person PersonID="50" NOC="GBR" IFPersonID="GBRGB26" FamilyName="Dent" GivenName="Gloria"/>
+  <Person PersonID="51" NOC="GBR" IFPersonID="GBRSD66" FamilyName="Dent" GivenName="Sammy"/>
+  <Person PersonID="52" NOC="USA" IFPersonID="USAJJ89" FamilyName="Johnstone" GivenName="Jeff"/>
+  <Person PersonID="53" NOC="GBR" IFPersonID="GBRGM58" FamilyName="Maltby" GivenName="Giles"/>
+  <Person PersonID="54" NOC="GBR" IFPersonID="GBROM13" FamilyName="Maltby" GivenName="Ollie"/>
+  <Person PersonID="55" NOC="GBR" IFPersonID="GBRBM47" FamilyName="Mclaughlin" GivenName="Bradley"/>
+  <Person PersonID="56" NOC="USA" IFPersonID="USAGS113" FamilyName="Slamowitz" GivenName="Greg"/>
+  <Person PersonID="57" NOC="GBR" IFPersonID="GBRRS106" FamilyName="Southwell" GivenName="Robbie"/>
+  <Person PersonID="58" NOC="USA" IFPersonID="USAJE74" FamilyName="Elvart" GivenName="James"/>
+  <Person PersonID="59" NOC="CAN" IFPersonID="CANPB10" FamilyName="Baskett" GivenName="Paul"/>
+  <Person PersonID="60" NOC="USA" IFPersonID="USATB114" FamilyName="Berlinski" GivenName="Terra"/>
+  <Person PersonID="61" NOC="USA" IFPersonID="USAQB1" FamilyName="Bruhn" GivenName="Quentin"/>
+  <Person PersonID="62" NOC="ROU" IFPersonID="ROUDC1" FamilyName="Candea" GivenName="Dorin"/>
+  <Person PersonID="63" NOC="USA" IFPersonID="USAGO7" FamilyName="O'Neil" GivenName="Gerard"/>
+  <Person PersonID="64" NOC="USA" IFPersonID="USAWR39" FamilyName="Richards" GivenName="William"/>
+  <Person PersonID="65" NOC="USA" IFPersonID="USAWS86" FamilyName="Smith" GivenName="William"/>
+  <Person PersonID="66" NOC="USA" IFPersonID="USAAT13" FamilyName="Terhune" GivenName="Allan"/>
+  <Person PersonID="67" NOC="USA" IFPersonID="USABG26" FamilyName="Greenwald" GivenName="Bennet"/>
+  <Person PersonID="68" NOC="USA" IFPersonID="USAPC107" FamilyName="Cabot" GivenName="Peter"/>
+  <Person PersonID="69" NOC="USA" IFPersonID="USAED4" FamilyName="Doyle" GivenName="Eric"/>
+  <Person PersonID="70" NOC="USA" IFPersonID="USAAF5" FamilyName="Field" GivenName="Allan"/>
+  <Person PersonID="71" NOC="USA" IFPersonID="USADG83" FamilyName="George" GivenName="David"/>
+  <Person PersonID="72" NOC="USA" IFPersonID="USADG112" FamilyName="Guay" GivenName="Drew"/>
+  <Person PersonID="73" NOC="USA" IFPersonID="USASH96" FamilyName="Herrin" GivenName="Sam"/>
+  <Person PersonID="74" NOC="USA" IFPersonID="USATW34" FamilyName="Wolk" GivenName="Tyler"/>
+  <Person PersonID="75" NOC="GBR" IFPersonID="GBRAM31" FamilyName="Mack" GivenName="Tony"/>
+  <Person PersonID="76" NOC="FRA" IFPersonID="FRACB72" FamilyName="Bontemps" GivenName="Cedric"/>
+  <Person PersonID="77" NOC="USA" IFPersonID="USAPC33" FamilyName="Colby" GivenName="Peter"/>
+  <Person PersonID="78" NOC="AUT" IFPersonID="AUTPF3" FamilyName="Farbowski" GivenName="Phillip"/>
+  <Person PersonID="79" NOC="USA" IFPersonID="USAFG7" FamilyName="Gordon" GivenName="Fiona"/>
+  <Person PersonID="80" NOC="IRL" IFPersonID="IRLRG13" FamilyName="grimes" GivenName="Ruairi"/>
+  <Person PersonID="81" NOC="GBR" IFPersonID="GBRSM30" FamilyName="Mack" GivenName="Sally"/>
+  <Person PersonID="82" NOC="ITA" IFPersonID="ITAOM1" FamilyName="Mayr" GivenName="Oscar"/>
+  <Person PersonID="83" NOC="GBR" IFPersonID="GBRJS3" FamilyName="Smart" GivenName="Jeremy"/>
+  <Person PersonID="84" NOC="USA" IFPersonID="USADI1" FamilyName="Irish" GivenName="David"/>
+  <Person PersonID="85" NOC="USA" IFPersonID="USATB47" FamilyName="Babel" GivenName="Tom"/>
+  <Person PersonID="86" NOC="USA" IFPersonID="USAAB84" FamilyName="Berge" GivenName="Andrew"/>
+  <Person PersonID="87" NOC="USA" IFPersonID="USANB16" FamilyName="Berge" GivenName="Norman"/>
+  <Person PersonID="88" NOC="USA" IFPersonID="USATD27" FamilyName="Davis" GivenName="Trevor"/>
+  <Person PersonID="89" NOC="USA" IFPersonID="USAPF39" FamilyName="Farrell" GivenName="Patrick"/>
+  <Person PersonID="90" NOC="USA" IFPersonID="USANF15" FamilyName="Ford" GivenName="Nick"/>
+  <Person PersonID="91" NOC="USA" IFPersonID="USACL17" FamilyName="Lamb" GivenName="Christopher"/>
+  <Person PersonID="92" NOC="USA" IFPersonID="USADC140" FamilyName="CURTISS" GivenName="DOUGLAS"/>
+  <Person PersonID="93" NOC="USA" IFPersonID="USAAH39" FamilyName="HERLIHY" GivenName="ANDY"/>
+  <Person PersonID="94" NOC="USA" IFPersonID="USAPA12" FamilyName="ADAM" GivenName="PAUL"/>
+  <Person PersonID="95" NOC="USA" IFPersonID="USANE9" FamilyName="ESTES" GivenName="NAT"/>
+  <Person PersonID="96" NOC="USA" IFPersonID="USAEH23" FamilyName="HERLIHY" GivenName="LIZ"/>
+  <Person PersonID="97" NOC="USA" IFPersonID="USASM138" FamilyName="MCLAUGHLIN" GivenName="SEAN"/>
+  <Person PersonID="98" NOC="USA" IFPersonID="USAIP3" FamilyName="PERRY" GivenName="IRA"/>
+  <Person PersonID="99" NOC="USA" IFPersonID="USARW51" FamilyName="WALSH" GivenName="RYAN"/>
+  <Person PersonID="100" NOC="GBR" IFPersonID="GBRCJ34" FamilyName="Jones" GivenName="Chris"/>
+  <Person PersonID="101" NOC="USA" IFPersonID="USAKF45" FamilyName="Fischburg" GivenName="Kenn"/>
+  <Person PersonID="102" NOC="USA" IFPersonID="USASJ6" FamilyName="Johnstone" GivenName="Stuart"/>
+  <Person PersonID="103" NOC="USA" IFPersonID="USAJL82" FamilyName="johnstone" GivenName="Julia"/>
+  <Person PersonID="104" NOC="GBR" IFPersonID="GBRHP11" FamilyName="Le Prevost" GivenName="Hannah"/>
+  <Person PersonID="105" NOC="GBR" IFPersonID="GBRCL13" FamilyName="Le Prevost" GivenName="chris"/>
+  <Person PersonID="106" NOC="GBR" IFPersonID="GBRLM52" FamilyName="makin" GivenName="louise"/>
+  <Person PersonID="107" NOC="USA" IFPersonID="USADM220" FamilyName="Mckiege" GivenName="Doug"/>
+  <Person PersonID="108" NOC="CAN" IFPersonID="CANCD19" FamilyName="Desgagnes" GivenName="Carl"/>
+  <Person PersonID="109" NOC="CAN" IFPersonID="CANTB9" FamilyName="Barbeau" GivenName="Thomas E."/>
+  <Person PersonID="110" NOC="CAN" IFPersonID="CANGA11" FamilyName="Allard" GivenName="Guy"/>
+  <Person PersonID="111" NOC="CAN" IFPersonID="CANMD26" FamilyName="Doyon" GivenName="Martin"/>
+  <Person PersonID="112" NOC="CAN" IFPersonID="CANPP8" FamilyName="Paquette" GivenName="Pierre"/>
+  <Person PersonID="113" NOC="CAN" IFPersonID="CANSP6" FamilyName="Picher" GivenName="Stephane"/>
+  <Person PersonID="114" NOC="CAN" IFPersonID="CANYR1" FamilyName="Richard" GivenName="Yannick"/>
+  <Person PersonID="115" NOC="CAN" IFPersonID="CANMS44" FamilyName="Simard" GivenName="Martin"/>
+  <Person PersonID="116" NOC="GBR" IFPersonID="GBRPT39" FamilyName="thomas" GivenName="philip"/>
+  <Person PersonID="117" NOC="GBR" IFPersonID="GBRDM21" FamilyName="McDonald" GivenName="Duncan"/>
+  <Person PersonID="118" NOC="GBR" IFPersonID="GBRKS11" FamilyName="sproul" GivenName="kevin"/>
+  <Person PersonID="119" NOC="GBR" IFPersonID="GBRCF27" FamilyName="Fisher" GivenName="Chris"/>
+  <Person PersonID="120" NOC="AUS" IFPersonID="AUSCT1" FamilyName="thompson" GivenName="christian"/>
+  <Person PersonID="121" NOC="GBR" IFPersonID="GBRBT12" FamilyName="tranter" GivenName="ben"/>
+  <Person PersonID="122" NOC="GBR" IFPersonID="GBRJW129" FamilyName="wills" GivenName="jack"/>
+  <Person PersonID="123" NOC="GBR" IFPersonID="GBREZ1" FamilyName="zorab" GivenName="emma"/>
+  <Person PersonID="124" NOC="IVB" IFPersonID="IVBST2" FamilyName="Talbot" GivenName="Sam"/>
+  <Person PersonID="125" NOC="IVB" IFPersonID="IVBSA1" FamilyName="Anderson" GivenName="Sean"/>
+  <Person PersonID="126" NOC="IVB" IFPersonID="IVBAA1" FamilyName="Anderson" GivenName="Alec"/>
+  <Person PersonID="127" NOC="USA" IFPersonID="USASF72" FamilyName="Fisher" GivenName="Sumner"/>
+  <Person PersonID="128" NOC="IRL" IFPersonID="IRLRG15" FamilyName="Greenan" GivenName="Rory"/>
+  <Person PersonID="129" NOC="USA" IFPersonID="USADJ42" FamilyName="Johnson" GivenName="Dirk"/>
+  <Person PersonID="130" NOC="GBR" IFPersonID="GBRBN7" FamilyName="Nixon" GivenName="Brian"/>
+  <Person PersonID="131" NOC="USA" IFPersonID="USAHW20" FamilyName="White" GivenName="Haley"/>
+  <Person PersonID="132" NOC="USA" IFPersonID="USAMR120" FamilyName="Roesch" GivenName="Martin"/>
+  <Person PersonID="133" NOC="USA" IFPersonID="USACB189" FamilyName="Bowdren" GivenName="Camden"/>
+  <Person PersonID="134" NOC="USA" IFPersonID="USASH77" FamilyName="Harr" GivenName="Sean"/>
+  <Person PersonID="135" NOC="USA" IFPersonID="USAJH213" FamilyName="Hering" GivenName="Jarrett"/>
+  <Person PersonID="136" NOC="USA" IFPersonID="USADR8" FamilyName="Reig" GivenName="Derrick"/>
+  <Person PersonID="137" NOC="GBR" IFPersonID="GBRDS68" FamilyName="Scott" GivenName="Dave"/>
+  <Person PersonID="138" NOC="USA" IFPersonID="USABS147" FamilyName="Stagg" GivenName="Brady"/>
+  <Person PersonID="139" NOC="USA" IFPersonID="USACT28" FamilyName="Teixeira" GivenName="Chris"/>
+  <Person PersonID="140" NOC="USA" IFPersonID="USADM226" FamilyName="McCreight" GivenName="David"/>
+  <Person PersonID="141" NOC="USA" IFPersonID="USAJC149" FamilyName="Currie" GivenName="Jason"/>
+  <Person PersonID="142" NOC="USA" IFPersonID="USAJF149" FamilyName="Ferris" GivenName="Dustin"/>
+  <Person PersonID="143" NOC="USA" IFPersonID="USAJG211" FamilyName="Galloway" GivenName="Jill"/>
+  <Person PersonID="144" NOC="USA" IFPersonID="USADJ69" FamilyName="Johnson" GivenName="Deke"/>
+  <Person PersonID="145" NOC="USA" IFPersonID="USAJS340" FamilyName="Stefancik" GivenName="John"/>
+  <Person PersonID="146" NOC="USA" IFPersonID="USAMS279" FamilyName="Stefancik" GivenName="Mike"/>
+  <Person PersonID="147" NOC="USA" IFPersonID="USAST29" FamilyName="Toth" GivenName="Susan"/>
+  <Person PersonID="148" NOC="USA" IFPersonID="USAJD238" FamilyName="Donovan" GivenName="John"/>
+  <Person PersonID="149" NOC="AUS" IFPersonID="AUSRW30" FamilyName="Warren" GivenName="Rod"/>
+  <Person PersonID="150" NOC="AUS" IFPersonID="AUSAC48" FamilyName="Cole" GivenName="Aaron"/>
+  <Person PersonID="151" NOC="AUS" IFPersonID="AUSSE13" FamilyName="Entwistle" GivenName="Sandra"/>  
+  <Person PersonID="153" NOC="USA" IFPersonID="USAAK62" FamilyName="Klyver" GivenName="Adam"/>
+  <Person PersonID="154" NOC="USA" IFPersonID="USAAS25" FamilyName="Stookey" GivenName="Anson"/>
+  <Person PersonID="155" NOC="AUS" IFPersonID="AUSDV5" FamilyName="Van Teylingen" GivenName="Dean"/>
+  <Person PersonID="156" NOC="USA" IFPersonID="USAAW99" FamilyName="Ward" GivenName="Andrew"/>
+  <Person PersonID="157" NOC="USA" IFPersonID="USAKD63" FamilyName="Denien" GivenName="Kevin"/>
+  <Person PersonID="158" NOC="USA" IFPersonID="USAIF4" FamilyName="Fraser" GivenName="Ian"/>
+  <Person PersonID="159" NOC="USA" IFPersonID="USAJK175" FamilyName="Kapell" GivenName="Joshua"/>
+  <Person PersonID="160" NOC="USA" IFPersonID="USAMK112" FamilyName="Kapell" GivenName="Matt"/>
+  <Person PersonID="161" NOC="USA" IFPersonID="USAKM70" FamilyName="McKee" GivenName="Kevin"/>
+  <Person PersonID="162" NOC="USA" IFPersonID="USAKS124" FamilyName="Scala" GivenName="Keith"/>
+  <Person PersonID="163" NOC="USA" IFPersonID="USASW115" FamilyName="Ward" GivenName="Sedgwick"/>
+  <Person PersonID="164" NOC="USA" IFPersonID="USAPW30" FamilyName="Wilson" GivenName="Patrick"/>
+  <Person PersonID="165" NOC="USA" IFPersonID="USALS75" FamilyName="Siegal" GivenName="Len"/>
+  <Person PersonID="166" NOC="CAN" IFPersonID="CANDC29" FamilyName="Cameron" GivenName="Don"/>
+  <Person PersonID="167" NOC="USA" IFPersonID="USAJE67" FamilyName="Erleman" GivenName="Josef"/>
+  <Person PersonID="168" NOC="USA" IFPersonID="USAJF131" FamilyName="Falconer" GivenName="Justin"/>
+  <Person PersonID="169" NOC="USA" IFPersonID="USAOF1" FamilyName="Farris" GivenName="Owen"/>
+  <Person PersonID="170" NOC="USA" IFPersonID="USASM178" FamilyName="Morin" GivenName="Sarah"/>
+  <Person PersonID="171" NOC="USA" IFPersonID="USAMP24" FamilyName="Ploch" GivenName="Mark"/>
+  <Person PersonID="172" NOC="USA" IFPersonID="USARS216" FamilyName="Stearns" GivenName="Rich"/>
+  <Person PersonID="173" NOC="USA" IFPersonID="USAGM62" FamilyName="Miz" GivenName="George"/>
+  <Person PersonID="174" NOC="USA" IFPersonID="USAPD77" FamilyName="Dreher" GivenName="Peter"/>
+  <Person PersonID="175" NOC="USA" IFPersonID="USAJD242" FamilyName="Dreher" GivenName="Joanna"/>
+  <Person PersonID="176" NOC="USA" IFPersonID="USADF55" FamilyName="Franzel" GivenName="David"/>
+  <Person PersonID="177" NOC="USA" IFPersonID="USADH52" FamilyName="Hood" GivenName="David"/>
+  <Person PersonID="178" NOC="USA" IFPersonID="USALK32" FamilyName="Kerner" GivenName="Larry"/>
+  <Person PersonID="179" NOC="USA" IFPersonID="USAAM116" FamilyName="Miz" GivenName="Andrea"/>
+  <Person PersonID="180" NOC="USA" IFPersonID="USAMM84" FamilyName="Muhlenkamp" GivenName="Matthew"/>
+  <Person PersonID="181" NOC="USA" IFPersonID="USAGW49" FamilyName="Weisberg" GivenName="Gary"/>
+  <Person PersonID="182" NOC="USA" IFPersonID="USATB132" FamilyName="Blatterman" GivenName="Tom"/>
+  <Person PersonID="183" NOC="USA" IFPersonID="USAAC61" FamilyName="Clegg" GivenName="Alex"/>
+  <Person PersonID="184" NOC="USA" IFPersonID="USARM122" FamilyName="Mann" GivenName="Robert"/>
+  <Person PersonID="185" NOC="USA" IFPersonID="USAJM344" FamilyName="Murphy" GivenName="James"/>
+  <Person PersonID="186" NOC="USA" IFPersonID="USAMR26" FamilyName="Royer" GivenName="Michael"/>
+  <Person PersonID="187" NOC="USA" IFPersonID="USAJS95" FamilyName="Samel" GivenName="Jonathan"/>
+  <Person PersonID="188" NOC="USA" IFPersonID="USAJS31" FamilyName="Silverman" GivenName="Jeffrey"/>
+  <Person PersonID="189" NOC="USA" IFPersonID="USARW135" FamilyName="White" GivenName="Ryan"/>
+  <Person PersonID="190" NOC="USA" IFPersonID="USAAV24" FamilyName="Van Liew" GivenName="Alfred"/>
+  <Person PersonID="191" NOC="USA" IFPersonID="USADB147" FamilyName="Brodsky" GivenName="David"/>
+  <Person PersonID="192" NOC="NZL" IFPersonID="NZLTD5" FamilyName="Davidson" GivenName="Trevor"/>
+  <Person PersonID="193" NOC="USA" IFPersonID="USAJG214" FamilyName="Gieseke" GivenName="Jimmy"/>
+  <Person PersonID="194" NOC="USA" IFPersonID="USAJG212" FamilyName="Gieseke" GivenName="Johnny"/>
+  <Person PersonID="195" NOC="USA" IFPersonID="USARG87" FamilyName="Goff" GivenName="Bob"/>
+  <Person PersonID="196" NOC="USA" IFPersonID="USASH99" FamilyName="Howell" GivenName="Sam"/>
+  <Person PersonID="197" NOC="USA" IFPersonID="USAKK45" FamilyName="Klingler" GivenName="Kerry"/>
+  <Person PersonID="198" NOC="USA" IFPersonID="USAGM75" FamilyName="Moss" GivenName="George"/>
+  <Person PersonID="199" NOC="CAN" IFPersonID="CANMC32" FamilyName="Côté" GivenName="Marcel"/>
+  <Person PersonID="200" NOC="CAN" IFPersonID="CANNN3" FamilyName="Nadeau" GivenName="Normand"/>
+  <Person PersonID="201" NOC="CAN" IFPersonID="CANPB25" FamilyName="Bernier" GivenName="Pierre"/>
+  <Person PersonID="202" NOC="CAN" IFPersonID="CANAB36" FamilyName="Beaudet" GivenName="André"/>
+  <Person PersonID="203" NOC="CAN" IFPersonID="CANCG15" FamilyName="Gauvin" GivenName="Claude"/>
+  <Person PersonID="204" NOC="CAN" IFPersonID="CANPD8" FamilyName="Drouin" GivenName="Philippe"/>
+  <Person PersonID="205" NOC="CAN" IFPersonID="CANSG16" FamilyName="Gagné" GivenName="Sylvain"/>
+  <Person PersonID="206" NOC="CAN" IFPersonID="CANNC14" FamilyName="Côté" GivenName="Nicolas"/>
+  <Boat BoatID="1" SailNumber="USA 61666" BoatName="My Sharona (8)"/>
+  <Boat BoatID="2" SailNumber="USA 12" BoatName="Kashmir (4)"/>
+  <Boat BoatID="3" SailNumber="USA 60365" BoatName="Lake Effect (5)"/>
+  <Boat BoatID="4" SailNumber="USA 43" BoatName="Wind Czar (25)"/>
+  <Boat BoatID="5" SailNumber="USA 93" BoatName="Spaceman Spiff (19)"/>
+  <Boat BoatID="6" SailNumber="USA 16" BoatName="Partnership (14)"/>
+  <Boat BoatID="7" SailNumber="GBR 2615R" BoatName="Jelvis (3)"/>
+  <Boat BoatID="8" SailNumber="USA 89" BoatName="Wooton (22)"/>
+  <Boat BoatID="9" SailNumber="USA 3" BoatName="Perseverance (17)"/>
+  <Boat BoatID="10" SailNumber="GBR 111N" BoatName="McFly (7)"/>
+  <Boat BoatID="11" SailNumber="USA 60611" BoatName="No Surprise (27)"/>
+  <Boat BoatID="12" SailNumber="USA 30" BoatName="Wicked 2.0 (15)"/>
+  <Boat BoatID="13" SailNumber="GBR 7751R" BoatName="Wild Child  (24)"/>
+  <Boat BoatID="14" SailNumber="CAN 23" BoatName="Volteface (23)"/>
+  <Boat BoatID="15" SailNumber="GBR 7611R" BoatName="Shmokin Joe (18)"/>
+  <Boat BoatID="16" SailNumber="USA 60613" BoatName="Spike (20)"/>
+  <Boat BoatID="17" SailNumber="USA 008" BoatName="Velocity (16)"/>
+  <Boat BoatID="18" SailNumber="USA 59" BoatName="DarkHorse (12)"/>
+  <Boat BoatID="19" SailNumber="AUS SM1110" BoatName="Libertas (26)"/>
+  <Boat BoatID="20" SailNumber="USA 60909" BoatName="Bravo (11)"/>
+  <Boat BoatID="21" SailNumber="USA 72" BoatName="Lucky Dubie (6)"/>
+  <Boat BoatID="22" SailNumber="USA 60111" BoatName="Impulse (2)"/>
+  <Boat BoatID="23" SailNumber="USA 29" BoatName="Heat Wave (10)"/>
+  <Boat BoatID="24" SailNumber="USA 711" BoatName="Odyssey (1)"/>
+  <Boat BoatID="25" SailNumber="CAN 11114" BoatName="Survenant (21)"/>
+  <Team NOC="USA" BoatID="1" TeamID="1" TeamName="My Sharona (8)">
+    <Crew PersonID="1" Position="S"/>
+    <Crew PersonID="2" Position="C"/>
+    <Crew PersonID="3" Position="C"/>
+    <Crew PersonID="4" Position="C"/>
+    <Crew PersonID="5" Position="C"/>
+    <Crew PersonID="6" Position="C"/>
+    <Crew PersonID="7" Position="C"/>
+    <Crew PersonID="8" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="2" TeamID="2" TeamName="Kashmir (4)">
+    <Crew PersonID="9" Position="S"/>
+    <Crew PersonID="10" Position="C"/>
+    <Crew PersonID="11" Position="C"/>
+    <Crew PersonID="12" Position="C"/>
+    <Crew PersonID="13" Position="C"/>
+    <Crew PersonID="14" Position="C"/>
+    <Crew PersonID="15" Position="C"/>
+    <Crew PersonID="16" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="3" TeamID="3" TeamName="Lake Effect (5)">
+    <Crew PersonID="17" Position="S"/>
+    <Crew PersonID="18" Position="C"/>
+    <Crew PersonID="19" Position="C"/>
+    <Crew PersonID="20" Position="C"/>
+    <Crew PersonID="21" Position="C"/>
+    <Crew PersonID="22" Position="C"/>
+    <Crew PersonID="23" Position="C"/>
+    <Crew PersonID="24" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="4" TeamID="4" TeamName="Wind Czar (25)">
+    <Crew PersonID="25" Position="S"/>
+    <Crew PersonID="26" Position="C"/>
+    <Crew PersonID="27" Position="C"/>
+    <Crew PersonID="28" Position="C"/>
+    <Crew PersonID="29" Position="C"/>
+    <Crew PersonID="30" Position="C"/>
+    <Crew PersonID="31" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="5" TeamID="5" TeamName="Spaceman Spiff (19)">
+    <Crew PersonID="32" Position="S"/>
+    <Crew PersonID="33" Position="C"/>
+    <Crew PersonID="34" Position="C"/>
+    <Crew PersonID="35" Position="C"/>
+    <Crew PersonID="36" Position="C"/>
+    <Crew PersonID="37" Position="C"/>
+    <Crew PersonID="38" Position="C"/>
+    <Crew PersonID="39" Position="C"/>
+  </Team>
+  <Team BoatID="6" TeamID="6" TeamName="Partnership (14)">
+    <Crew PersonID="40" Position="S"/>
+    <Crew PersonID="41" Position="C"/>
+    <Crew PersonID="42" Position="C"/>
+    <Crew PersonID="43" Position="C"/>
+    <Crew PersonID="44" Position="C"/>
+    <Crew PersonID="45" Position="C"/>
+    <Crew PersonID="46" Position="C"/>
+    <Crew PersonID="47" Position="C"/>
+  </Team>
+  <Team NOC="GBR" BoatID="7" TeamID="7" TeamName="Jelvis (3)">
+    <Crew PersonID="48" Position="S"/>
+    <Crew PersonID="49" Position="C"/>
+    <Crew PersonID="50" Position="C"/>
+    <Crew PersonID="51" Position="C"/>
+    <Crew PersonID="52" Position="C"/>
+    <Crew PersonID="53" Position="C"/>
+    <Crew PersonID="54" Position="C"/>
+    <Crew PersonID="55" Position="C"/>
+    <Crew PersonID="56" Position="C"/>
+    <Crew PersonID="57" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="8" TeamID="8" TeamName="Wooton (22)">
+    <Crew PersonID="58" Position="S"/>
+    <Crew PersonID="59" Position="C"/>
+    <Crew PersonID="60" Position="C"/>
+    <Crew PersonID="61" Position="C"/>
+    <Crew PersonID="62" Position="C"/>
+    <Crew PersonID="63" Position="C"/>
+    <Crew PersonID="64" Position="C"/>
+    <Crew PersonID="65" Position="C"/>
+    <Crew PersonID="66" Position="C"/>
+  </Team>
+  <Team BoatID="9" TeamID="9" TeamName="Perseverance (17)">
+    <Crew PersonID="67" Position="S"/>
+    <Crew PersonID="68" Position="C"/>
+    <Crew PersonID="69" Position="C"/>
+    <Crew PersonID="70" Position="C"/>
+    <Crew PersonID="71" Position="C"/>
+    <Crew PersonID="72" Position="C"/>
+    <Crew PersonID="73" Position="C"/>
+    <Crew PersonID="74" Position="C"/>
+  </Team>
+  <Team NOC="GBR" BoatID="10" TeamID="10" TeamName="McFly (7)">
+    <Crew PersonID="75" Position="S"/>
+    <Crew PersonID="76" Position="C"/>
+    <Crew PersonID="77" Position="C"/>
+    <Crew PersonID="78" Position="C"/>
+    <Crew PersonID="79" Position="C"/>
+    <Crew PersonID="80" Position="C"/>
+    <Crew PersonID="81" Position="C"/>
+    <Crew PersonID="82" Position="C"/>
+    <Crew PersonID="83" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="11" TeamID="11" TeamName="No Surprise (27)">
+    <Crew PersonID="84" Position="S"/>
+    <Crew PersonID="85" Position="C"/>
+    <Crew PersonID="86" Position="C"/>
+    <Crew PersonID="87" Position="C"/>
+    <Crew PersonID="88" Position="C"/>
+    <Crew PersonID="89" Position="C"/>
+    <Crew PersonID="90" Position="C"/>
+    <Crew PersonID="91" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="12" TeamID="12" TeamName="Wicked 2.0 (15)">
+    <Crew PersonID="92" Position="S"/>
+    <Crew PersonID="93" Position="C"/>
+    <Crew PersonID="94" Position="C"/>
+    <Crew PersonID="95" Position="C"/>
+    <Crew PersonID="96" Position="C"/>
+    <Crew PersonID="97" Position="C"/>
+    <Crew PersonID="98" Position="C"/>
+    <Crew PersonID="99" Position="C"/>
+  </Team>
+  <Team NOC="GBR" BoatID="13" TeamID="13" TeamName="Wild Child  (24)">
+    <Crew PersonID="100" Position="S"/>
+    <Crew PersonID="101" Position="C"/>
+    <Crew PersonID="102" Position="C"/>
+    <Crew PersonID="103" Position="C"/>
+    <Crew PersonID="104" Position="C"/>
+    <Crew PersonID="105" Position="C"/>
+    <Crew PersonID="106" Position="C"/>
+    <Crew PersonID="107" Position="C"/>
+  </Team>
+  <Team NOC="CAN" BoatID="14" TeamID="14" TeamName="Volteface (23)">
+    <Crew PersonID="108" Position="S"/>
+    <Crew PersonID="109" Position="C"/>
+    <Crew PersonID="110" Position="C"/>
+    <Crew PersonID="111" Position="C"/>
+    <Crew PersonID="112" Position="C"/>
+    <Crew PersonID="113" Position="C"/>
+    <Crew PersonID="114" Position="C"/>
+    <Crew PersonID="115" Position="C"/>
+  </Team>
+  <Team NOC="GBR" BoatID="15" TeamID="15" TeamName="Shmokin Joe (18)">
+    <Crew PersonID="116" Position="S"/>
+    <Crew PersonID="117" Position="C"/>
+    <Crew PersonID="118" Position="C"/>
+    <Crew PersonID="119" Position="C"/>
+    <Crew PersonID="120" Position="C"/>
+    <Crew PersonID="121" Position="C"/>
+    <Crew PersonID="122" Position="C"/>
+    <Crew PersonID="123" Position="C"/>
+  </Team>
+  <Team NOC="IVB" BoatID="16" TeamID="16" TeamName="Spike (20)">
+    <Crew PersonID="124" Position="S"/>
+    <Crew PersonID="125" Position="C"/>
+    <Crew PersonID="126" Position="C"/>
+    <Crew PersonID="127" Position="C"/>
+    <Crew PersonID="128" Position="C"/>
+    <Crew PersonID="129" Position="C"/>
+    <Crew PersonID="130" Position="C"/>
+    <Crew PersonID="131" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="17" TeamID="17" TeamName="Velocity (16)">
+    <Crew PersonID="132" Position="S"/>
+    <Crew PersonID="133" Position="C"/>
+    <Crew PersonID="134" Position="C"/>
+    <Crew PersonID="135" Position="C"/>
+    <Crew PersonID="136" Position="C"/>
+    <Crew PersonID="137" Position="C"/>
+    <Crew PersonID="138" Position="C"/>
+    <Crew PersonID="139" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="18" TeamID="18" TeamName="DarkHorse (12)">
+    <Crew PersonID="140" Position="S"/>
+    <Crew PersonID="141" Position="C"/>
+    <Crew PersonID="142" Position="C"/>
+    <Crew PersonID="143" Position="C"/>
+    <Crew PersonID="144" Position="C"/>
+    <Crew PersonID="145" Position="C"/>
+    <Crew PersonID="146" Position="C"/>
+    <Crew PersonID="147" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="19" TeamID="19" TeamName="Libertas (26)">
+    <Crew PersonID="148" Position="S"/>
+    <Crew PersonID="149" Position="C"/>
+    <Crew PersonID="150" Position="C"/>
+    <Crew PersonID="151" Position="C"/>    
+    <Crew PersonID="153" Position="C"/>
+    <Crew PersonID="154" Position="C"/>
+    <Crew PersonID="155" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="20" TeamID="20" TeamName="Bravo (11)">
+    <Crew PersonID="156" Position="S"/>
+    <Crew PersonID="157" Position="C"/>
+    <Crew PersonID="158" Position="C"/>
+    <Crew PersonID="159" Position="C"/>
+    <Crew PersonID="160" Position="C"/>
+    <Crew PersonID="161" Position="C"/>
+    <Crew PersonID="162" Position="C"/>
+    <Crew PersonID="163" Position="C"/>
+    <Crew PersonID="164" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="21" TeamID="21" TeamName="Lucky Dubie (6)">
+    <Crew PersonID="165" Position="S"/>
+    <Crew PersonID="166" Position="C"/>
+    <Crew PersonID="167" Position="C"/>
+    <Crew PersonID="168" Position="C"/>
+    <Crew PersonID="169" Position="C"/>
+    <Crew PersonID="170" Position="C"/>
+    <Crew PersonID="171" Position="C"/>
+    <Crew PersonID="172" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="22" TeamID="22" TeamName="Impulse (2)">
+    <Crew PersonID="173" Position="S"/>
+    <Crew PersonID="174" Position="C"/>
+    <Crew PersonID="175" Position="C"/>
+    <Crew PersonID="176" Position="C"/>
+    <Crew PersonID="177" Position="C"/>
+    <Crew PersonID="178" Position="C"/>
+    <Crew PersonID="179" Position="C"/>
+    <Crew PersonID="180" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="23" TeamID="23" TeamName="Heat Wave (10)">
+    <Crew PersonID="181" Position="S"/>
+    <Crew PersonID="182" Position="C"/>
+    <Crew PersonID="183" Position="C"/>
+    <Crew PersonID="184" Position="C"/>
+    <Crew PersonID="185" Position="C"/>
+    <Crew PersonID="186" Position="C"/>
+    <Crew PersonID="187" Position="C"/>
+    <Crew PersonID="188" Position="C"/>
+    <Crew PersonID="189" Position="C"/>
+  </Team>
+  <Team NOC="USA" BoatID="24" TeamID="24" TeamName="Odyssey (1)">
+    <Crew PersonID="190" Position="S"/>
+    <Crew PersonID="191" Position="C"/>
+    <Crew PersonID="192" Position="C"/>
+    <Crew PersonID="193" Position="C"/>
+    <Crew PersonID="194" Position="C"/>
+    <Crew PersonID="195" Position="C"/>
+    <Crew PersonID="196" Position="C"/>
+    <Crew PersonID="197" Position="C"/>
+    <Crew PersonID="198" Position="C"/>
+  </Team>
+  <Team NOC="CAN" BoatID="25" TeamID="25" TeamName="Survenant (21)">
+    <Crew PersonID="199" Position="S"/>
+    <Crew PersonID="200" Position="C"/>
+    <Crew PersonID="201" Position="C"/>
+    <Crew PersonID="202" Position="C"/>
+    <Crew PersonID="203" Position="C"/>
+    <Crew PersonID="204" Position="C"/>
+    <Crew PersonID="205" Position="C"/>
+    <Crew PersonID="206" Position="C"/>
+  </Team>
+  <Event EventID="1" IFEventID="USA201506QAK" IFUploadCode="TESTING" Type="Regatta">
+    <Race RaceID="15" RaceNumber="1" RaceName="1" RaceStatus="final"/>
+    <Race RaceID="17" RaceNumber="2" RaceName="2" RaceStatus="final"/>
+    <Race RaceID="19" RaceNumber="3" RaceName="3" RaceStatus="final"/>
+    <Race RaceID="21" RaceNumber="4" RaceName="4" RaceStatus="final"/>
+    <Race RaceID="23" RaceNumber="5" RaceName="5" RaceStatus="final"/>
+    <Race RaceID="25" RaceNumber="6" RaceName="6" RaceStatus="final"/>
+    <Race RaceID="27" RaceNumber="7" RaceName="7" RaceStatus="final"/>
+    <Race RaceID="29" RaceNumber="8" RaceName="8" RaceStatus="final"/>
+    <Race RaceID="31" RaceNumber="9" RaceName="9" RaceStatus="final"/>
+    <Division Type="FleetRace" DivisionID="1" IFDivisionID="35472" Title="J1-11 World Championships" Gender="Open" IFClassID="J111">
+      <RaceResult RaceID="15" TeamID="1" BoatID="1" RaceRank="9" RacePoints="9"/>
+      <RaceResult RaceID="17" TeamID="1" BoatID="1" RaceRank="8" RacePoints="8"/>
+      <RaceResult RaceID="19" TeamID="1" BoatID="1" RaceRank="2" RacePoints="2"/>
+      <RaceResult RaceID="21" TeamID="1" BoatID="1" RaceRank="1" RacePoints="1"/>
+      <RaceResult RaceID="23" TeamID="1" BoatID="1" RaceRank="4" RacePoints="4"/>
+      <RaceResult RaceID="25" TeamID="1" BoatID="1" RaceRank="3" RacePoints="3"/>
+      <RaceResult RaceID="27" TeamID="1" BoatID="1" RaceRank="1" RacePoints="1"/>
+      <RaceResult RaceID="29" TeamID="1" BoatID="1" RaceRank="3" RacePoints="3"/>
+      <RaceResult RaceID="31" TeamID="1" BoatID="1" Discard="1" RaceRank="00001" RacePoints="26" ScoreCode="DNS"/>
+      <RaceResult RaceID="15" TeamID="2" BoatID="2" RaceRank="11" RacePoints="11"/>
+      <RaceResult RaceID="17" TeamID="2" BoatID="2" Discard="1" RaceRank="00001" RacePoints="26" ScoreCode="DSQ"/>
+      <RaceResult RaceID="19" TeamID="2" BoatID="2" RaceRank="6" RacePoints="6"/>
+      <RaceResult RaceID="21" TeamID="2" BoatID="2" RaceRank="8" RacePoints="8"/>
+      <RaceResult RaceID="23" TeamID="2" BoatID="2" RaceRank="5" RacePoints="5"/>
+      <RaceResult RaceID="25" TeamID="2" BoatID="2" RaceRank="6" RacePoints="6"/>
+      <RaceResult RaceID="27" TeamID="2" BoatID="2" RaceRank="3" RacePoints="3"/>
+      <RaceResult RaceID="29" TeamID="2" BoatID="2" RaceRank="7" RacePoints="7"/>
+      <RaceResult RaceID="31" TeamID="2" BoatID="2" RaceRank="1" RacePoints="1"/>
+      <RaceResult RaceID="15" TeamID="3" BoatID="3" RaceRank="10" RacePoints="10"/>
+      <RaceResult RaceID="17" TeamID="3" BoatID="3" RaceRank="12" RacePoints="12"/>
+      <RaceResult RaceID="19" TeamID="3" BoatID="3" RaceRank="3" RacePoints="3"/>
+      <RaceResult RaceID="21" TeamID="3" BoatID="3" RaceRank="2" RacePoints="2"/>
+      <RaceResult RaceID="23" TeamID="3" BoatID="3" RaceRank="3" RacePoints="3"/>
+      <RaceResult RaceID="25" TeamID="3" BoatID="3" RaceRank="4" RacePoints="4"/>
+      <RaceResult RaceID="27" TeamID="3" BoatID="3" Discard="1" RaceRank="20" RacePoints="20"/>
+      <RaceResult RaceID="29" TeamID="3" BoatID="3" RaceRank="6" RacePoints="6"/>
+      <RaceResult RaceID="31" TeamID="3" BoatID="3" RaceRank="11" RacePoints="11"/>
+      <RaceResult RaceID="15" TeamID="4" BoatID="4" RaceRank="8" RacePoints="8"/>
+      <RaceResult RaceID="17" TeamID="4" BoatID="4" RaceRank="3" RacePoints="3"/>
+      <RaceResult RaceID="19" TeamID="4" BoatID="4" RaceRank="15" RacePoints="15"/>
+      <RaceResult RaceID="21" TeamID="4" BoatID="4" RaceRank="3" RacePoints="3"/>
+      <RaceResult RaceID="23" TeamID="4" BoatID="4" RaceRank="9" RacePoints="9"/>
+      <RaceResult RaceID="25" TeamID="4" BoatID="4" Discard="1" RaceRank="00001" RacePoints="26" ScoreCode="RET"/>
+      <RaceResult RaceID="27" TeamID="4" BoatID="4" RaceRank="7" RacePoints="7"/>
+      <RaceResult RaceID="29" TeamID="4" BoatID="4" RaceRank="2" RacePoints="2"/>
+      <RaceResult RaceID="31" TeamID="4" BoatID="4" RaceRank="12" RacePoints="12"/>
+      <RaceResult RaceID="15" TeamID="5" BoatID="5" RaceRank="18" RacePoints="18"/>
+      <RaceResult RaceID="17" TeamID="5" BoatID="5" RaceRank="1" RacePoints="1"/>
+      <RaceResult RaceID="19" TeamID="5" BoatID="5" RaceRank="1" RacePoints="1"/>
+      <RaceResult RaceID="21" TeamID="5" BoatID="5" RaceRank="5" RacePoints="5"/>
+      <RaceResult RaceID="23" TeamID="5" BoatID="5" RaceRank="19" RacePoints="19"/>
+      <RaceResult RaceID="25" TeamID="5" BoatID="5" RaceRank="10" RacePoints="10"/>
+      <RaceResult RaceID="27" TeamID="5" BoatID="5" RaceRank="5" RacePoints="5"/>
+      <RaceResult RaceID="29" TeamID="5" BoatID="5" RaceRank="1" RacePoints="1"/>
+      <RaceResult RaceID="31" TeamID="5" BoatID="5" Discard="1" RaceRank="19" RacePoints="19"/>
+      <RaceResult RaceID="15" TeamID="6" BoatID="6" RaceRank="3" RacePoints="3"/>
+      <RaceResult RaceID="17" TeamID="6" BoatID="6" RaceRank="10" RacePoints="10"/>
+      <RaceResult RaceID="19" TeamID="6" BoatID="6" RaceRank="10" RacePoints="10"/>
+      <RaceResult RaceID="21" TeamID="6" BoatID="6" RaceRank="4" RacePoints="4"/>
+      <RaceResult RaceID="23" TeamID="6" BoatID="6" RaceRank="1" RacePoints="1"/>
+      <RaceResult RaceID="25" TeamID="6" BoatID="6" RaceRank="7" RacePoints="7"/>
+      <RaceResult RaceID="27" TeamID="6" BoatID="6" RaceRank="11" RacePoints="11"/>
+      <RaceResult RaceID="29" TeamID="6" BoatID="6" RaceRank="15" RacePoints="15"/>
+      <RaceResult RaceID="31" TeamID="6" BoatID="6" Discard="1" RaceRank="17" RacePoints="17"/>
+      <RaceResult RaceID="15" TeamID="7" BoatID="7" RaceRank="1" RacePoints="1"/>
+      <RaceResult RaceID="17" TeamID="7" BoatID="7" RaceRank="6" RacePoints="6"/>
+      <RaceResult RaceID="19" TeamID="7" BoatID="7" RaceRank="14" RacePoints="14"/>
+      <RaceResult RaceID="21" TeamID="7" BoatID="7" RaceRank="7" RacePoints="7"/>
+      <RaceResult RaceID="23" TeamID="7" BoatID="7" Discard="1" RaceRank="15" RacePoints="15"/>
+      <RaceResult RaceID="25" TeamID="7" BoatID="7" RaceRank="8" RacePoints="8"/>
+      <RaceResult RaceID="27" TeamID="7" BoatID="7" RaceRank="6" RacePoints="6"/>
+      <RaceResult RaceID="29" TeamID="7" BoatID="7" RaceRank="11" RacePoints="11"/>
+      <RaceResult RaceID="31" TeamID="7" BoatID="7" RaceRank="8" RacePoints="8"/>
+      <RaceResult RaceID="15" TeamID="8" BoatID="8" Discard="1" RaceRank="17" RacePoints="17"/>
+      <RaceResult RaceID="17" TeamID="8" BoatID="8" RaceRank="2" RacePoints="2"/>
+      <RaceResult RaceID="19" TeamID="8" BoatID="8" RaceRank="4" RacePoints="4"/>
+      <RaceResult RaceID="21" TeamID="8" BoatID="8" RaceRank="11" RacePoints="11"/>
+      <RaceResult RaceID="23" TeamID="8" BoatID="8" RaceRank="16" RacePoints="16"/>
+      <RaceResult RaceID="25" TeamID="8" BoatID="8" RaceRank="5" RacePoints="5"/>
+      <RaceResult RaceID="27" TeamID="8" BoatID="8" RaceRank="10" RacePoints="10"/>
+      <RaceResult RaceID="29" TeamID="8" BoatID="8" RaceRank="13" RacePoints="13"/>
+      <RaceResult RaceID="31" TeamID="8" BoatID="8" RaceRank="5" RacePoints="5"/>
+      <RaceResult RaceID="15" TeamID="9" BoatID="9" RaceRank="4" RacePoints="4"/>
+      <RaceResult RaceID="17" TeamID="9" BoatID="9" Discard="1" RaceRank="14" RacePoints="14"/>
+      <RaceResult RaceID="19" TeamID="9" BoatID="9" RaceRank="7" RacePoints="7"/>
+      <RaceResult RaceID="21" TeamID="9" BoatID="9" RaceRank="12" RacePoints="12"/>
+      <RaceResult RaceID="23" TeamID="9" BoatID="9" RaceRank="12" RacePoints="12"/>
+      <RaceResult RaceID="25" TeamID="9" BoatID="9" RaceRank="11" RacePoints="11"/>
+      <RaceResult RaceID="27" TeamID="9" BoatID="9" RaceRank="9" RacePoints="9"/>
+      <RaceResult RaceID="29" TeamID="9" BoatID="9" RaceRank="8" RacePoints="8"/>
+      <RaceResult RaceID="31" TeamID="9" BoatID="9" RaceRank="7" RacePoints="7"/>
+      <RaceResult RaceID="15" TeamID="10" BoatID="10" RaceRank="7" RacePoints="7"/>
+      <RaceResult RaceID="17" TeamID="10" BoatID="10" Discard="1" RaceRank="18" RacePoints="18"/>
+      <RaceResult RaceID="19" TeamID="10" BoatID="10" RaceRank="5" RacePoints="5"/>
+      <RaceResult RaceID="21" TeamID="10" BoatID="10" RaceRank="16" RacePoints="16"/>
+      <RaceResult RaceID="23" TeamID="10" BoatID="10" RaceRank="13" RacePoints="13"/>
+      <RaceResult RaceID="25" TeamID="10" BoatID="10" RaceRank="1" RacePoints="1"/>
+      <RaceResult RaceID="27" TeamID="10" BoatID="10" RaceRank="14" RacePoints="14"/>
+      <RaceResult RaceID="29" TeamID="10" BoatID="10" RaceRank="12" RacePoints="12"/>
+      <RaceResult RaceID="31" TeamID="10" BoatID="10" RaceRank="14" RacePoints="14"/>
+      <RaceResult RaceID="15" TeamID="11" BoatID="11" RaceRank="2" RacePoints="2"/>
+      <RaceResult RaceID="17" TeamID="11" BoatID="11" RaceRank="16" RacePoints="16"/>
+      <RaceResult RaceID="19" TeamID="11" BoatID="11" RaceRank="18" RacePoints="18"/>
+      <RaceResult RaceID="21" TeamID="11" BoatID="11" Discard="1" RaceRank="20" RacePoints="20"/>
+      <RaceResult RaceID="23" TeamID="11" BoatID="11" RaceRank="14" RacePoints="14"/>
+      <RaceResult RaceID="25" TeamID="11" BoatID="11" RaceRank="17" RacePoints="17"/>
+      <RaceResult RaceID="27" TeamID="11" BoatID="11" RaceRank="2" RacePoints="2"/>
+      <RaceResult RaceID="29" TeamID="11" BoatID="11" RaceRank="4" RacePoints="4"/>
+      <RaceResult RaceID="31" TeamID="11" BoatID="11" RaceRank="13" RacePoints="13"/>
+      <RaceResult RaceID="15" TeamID="12" BoatID="12" RaceRank="5" RacePoints="5"/>
+      <RaceResult RaceID="17" TeamID="12" BoatID="12" RaceRank="19" RacePoints="19"/>
+      <RaceResult RaceID="19" TeamID="12" BoatID="12" RaceRank="13" RacePoints="13"/>
+      <RaceResult RaceID="21" TeamID="12" BoatID="12" RaceRank="13" RacePoints="13"/>
+      <RaceResult RaceID="23" TeamID="12" BoatID="12" RaceRank="7" RacePoints="7"/>
+      <RaceResult RaceID="25" TeamID="12" BoatID="12" RaceRank="2" RacePoints="2"/>
+      <RaceResult RaceID="27" TeamID="12" BoatID="12" RaceRank="13" RacePoints="13"/>
+      <RaceResult RaceID="29" TeamID="12" BoatID="12" Discard="1" RaceRank="19" RacePoints="19"/>
+      <RaceResult RaceID="31" TeamID="12" BoatID="12" RaceRank="16" RacePoints="16"/>
+      <RaceResult RaceID="15" TeamID="13" BoatID="13" RaceRank="16" RacePoints="16"/>
+      <RaceResult RaceID="17" TeamID="13" BoatID="13" RaceRank="13" RacePoints="13"/>
+      <RaceResult RaceID="19" TeamID="13" BoatID="13" RaceRank="9" RacePoints="9"/>
+      <RaceResult RaceID="21" TeamID="13" BoatID="13" RaceRank="6" RacePoints="6"/>
+      <RaceResult RaceID="23" TeamID="13" BoatID="13" RaceRank="18" RacePoints="18"/>
+      <RaceResult RaceID="25" TeamID="13" BoatID="13" Discard="1" RaceRank="22" RacePoints="22"/>
+      <RaceResult RaceID="27" TeamID="13" BoatID="13" RaceRank="4" RacePoints="4"/>
+      <RaceResult RaceID="29" TeamID="13" BoatID="13" RaceRank="9" RacePoints="9"/>
+      <RaceResult RaceID="31" TeamID="13" BoatID="13" RaceRank="21" RacePoints="21"/>
+      <RaceResult RaceID="15" TeamID="14" BoatID="14" RaceRank="19" RacePoints="19"/>
+      <RaceResult RaceID="17" TeamID="14" BoatID="14" RaceRank="4" RacePoints="4"/>
+      <RaceResult RaceID="19" TeamID="14" BoatID="14" RaceRank="12" RacePoints="12"/>
+      <RaceResult RaceID="21" TeamID="14" BoatID="14" Discard="1" RaceRank="23" RacePoints="23"/>
+      <RaceResult RaceID="23" TeamID="14" BoatID="14" RaceRank="10" RacePoints="10"/>
+      <RaceResult RaceID="25" TeamID="14" BoatID="14" RaceRank="21" RacePoints="21"/>
+      <RaceResult RaceID="27" TeamID="14" BoatID="14" RaceRank="18" RacePoints="18"/>
+      <RaceResult RaceID="29" TeamID="14" BoatID="14" RaceRank="10" RacePoints="10"/>
+      <RaceResult RaceID="31" TeamID="14" BoatID="14" RaceRank="3" RacePoints="3"/>
+      <RaceResult RaceID="15" TeamID="15" BoatID="15" RaceRank="14" RacePoints="14"/>
+      <RaceResult RaceID="17" TeamID="15" BoatID="15" RaceRank="5" RacePoints="5"/>
+      <RaceResult RaceID="19" TeamID="15" BoatID="15" RaceRank="17" RacePoints="17"/>
+      <RaceResult RaceID="21" TeamID="15" BoatID="15" RaceRank="9" RacePoints="9"/>
+      <RaceResult RaceID="23" TeamID="15" BoatID="15" RaceRank="17" RacePoints="17"/>
+      <RaceResult RaceID="25" TeamID="15" BoatID="15" Discard="1" RaceRank="20" RacePoints="20"/>
+      <RaceResult RaceID="27" TeamID="15" BoatID="15" RaceRank="15" RacePoints="15"/>
+      <RaceResult RaceID="29" TeamID="15" BoatID="15" RaceRank="18" RacePoints="18"/>
+      <RaceResult RaceID="31" TeamID="15" BoatID="15" RaceRank="9" RacePoints="9"/>
+      <RaceResult RaceID="15" TeamID="16" BoatID="16" RaceRank="12" RacePoints="12"/>
+      <RaceResult RaceID="17" TeamID="16" BoatID="16" RaceRank="9" RacePoints="9"/>
+      <RaceResult RaceID="19" TeamID="16" BoatID="16" Discard="1" RaceRank="22" RacePoints="22"/>
+      <RaceResult RaceID="21" TeamID="16" BoatID="16" RaceRank="14" RacePoints="14"/>
+      <RaceResult RaceID="23" TeamID="16" BoatID="16" RaceRank="11" RacePoints="11"/>
+      <RaceResult RaceID="25" TeamID="16" BoatID="16" RaceRank="9" RacePoints="9"/>
+      <RaceResult RaceID="27" TeamID="16" BoatID="16" RaceRank="21" RacePoints="21"/>
+      <RaceResult RaceID="29" TeamID="16" BoatID="16" RaceRank="21" RacePoints="21"/>
+      <RaceResult RaceID="31" TeamID="16" BoatID="16" RaceRank="10" RacePoints="10"/>
+      <RaceResult RaceID="15" TeamID="17" BoatID="17" RaceRank="20" RacePoints="20"/>
+      <RaceResult RaceID="17" TeamID="17" BoatID="17" Discard="1" RaceRank="00001" RacePoints="26" ScoreCode="RET"/>
+      <RaceResult RaceID="19" TeamID="17" BoatID="17" RaceRank="00001" RacePoints="26" ScoreCode="DNC"/>
+      <RaceResult RaceID="21" TeamID="17" BoatID="17" RaceRank="00001" RacePoints="26" ScoreCode="DNC"/>
+      <RaceResult RaceID="23" TeamID="17" BoatID="17" RaceRank="8" RacePoints="8"/>
+      <RaceResult RaceID="25" TeamID="17" BoatID="17" RaceRank="16" RacePoints="16"/>
+      <RaceResult RaceID="27" TeamID="17" BoatID="17" RaceRank="8" RacePoints="8"/>
+      <RaceResult RaceID="29" TeamID="17" BoatID="17" RaceRank="5" RacePoints="5"/>
+      <RaceResult RaceID="31" TeamID="17" BoatID="17" RaceRank="2" RacePoints="2"/>
+      <RaceResult RaceID="15" TeamID="18" BoatID="18" Discard="1" RaceRank="22" RacePoints="22"/>
+      <RaceResult RaceID="17" TeamID="18" BoatID="18" RaceRank="15" RacePoints="15"/>
+      <RaceResult RaceID="19" TeamID="18" BoatID="18" RaceRank="16" RacePoints="16"/>
+      <RaceResult RaceID="21" TeamID="18" BoatID="18" RaceRank="21" RacePoints="21"/>
+      <RaceResult RaceID="23" TeamID="18" BoatID="18" RaceRank="20" RacePoints="20"/>
+      <RaceResult RaceID="25" TeamID="18" BoatID="18" RaceRank="12" RacePoints="12"/>
+      <RaceResult RaceID="27" TeamID="18" BoatID="18" RaceRank="17" RacePoints="17"/>
+      <RaceResult RaceID="29" TeamID="18" BoatID="18" RaceRank="17" RacePoints="17"/>
+      <RaceResult RaceID="31" TeamID="18" BoatID="18" RaceRank="4" RacePoints="4"/>
+      <RaceResult RaceID="15" TeamID="19" BoatID="19" RaceRank="15" RacePoints="15"/>
+      <RaceResult RaceID="17" TeamID="19" BoatID="19" RaceRank="20" RacePoints="20"/>
+      <RaceResult RaceID="19" TeamID="19" BoatID="19" Discard="1" RaceRank="24" RacePoints="24"/>
+      <RaceResult RaceID="21" TeamID="19" BoatID="19" RaceRank="15" RacePoints="15"/>
+      <RaceResult RaceID="23" TeamID="19" BoatID="19" RaceRank="2" RacePoints="2"/>
+      <RaceResult RaceID="25" TeamID="19" BoatID="19" RaceRank="18" RacePoints="18"/>
+      <RaceResult RaceID="27" TeamID="19" BoatID="19" RaceRank="19" RacePoints="19"/>
+      <RaceResult RaceID="29" TeamID="19" BoatID="19" RaceRank="20" RacePoints="20"/>
+      <RaceResult RaceID="31" TeamID="19" BoatID="19" RaceRank="18" RacePoints="18"/>
+      <RaceResult RaceID="15" TeamID="20" BoatID="20" RaceRank="6" RacePoints="6"/>
+      <RaceResult RaceID="17" TeamID="20" BoatID="20" RaceRank="11" RacePoints="11"/>
+      <RaceResult RaceID="19" TeamID="20" BoatID="20" RaceRank="20" RacePoints="20"/>
+      <RaceResult RaceID="21" TeamID="20" BoatID="20" RaceRank="10" RacePoints="10"/>
+      <RaceResult RaceID="23" TeamID="20" BoatID="20" RaceRank="22" RacePoints="22"/>
+      <RaceResult RaceID="25" TeamID="20" BoatID="20" RaceRank="14" RacePoints="14"/>
+      <RaceResult RaceID="27" TeamID="20" BoatID="20" RaceRank="24" RacePoints="24"/>
+      <RaceResult RaceID="29" TeamID="20" BoatID="20" Discard="1" RaceRank="00001" RacePoints="26" ScoreCode="ZFP"/>
+      <RaceResult RaceID="31" TeamID="20" BoatID="20" RaceRank="20" RacePoints="20"/>
+      <RaceResult RaceID="15" TeamID="21" BoatID="21" RaceRank="13" RacePoints="13"/>
+      <RaceResult RaceID="17" TeamID="21" BoatID="21" RaceRank="17" RacePoints="17"/>
+      <RaceResult RaceID="19" TeamID="21" BoatID="21" RaceRank="11" RacePoints="11"/>
+      <RaceResult RaceID="21" TeamID="21" BoatID="21" RaceRank="18" RacePoints="18"/>
+      <RaceResult RaceID="23" TeamID="21" BoatID="21" Discard="1" RaceRank="25" RacePoints="25"/>
+      <RaceResult RaceID="25" TeamID="21" BoatID="21" RaceRank="15" RacePoints="15"/>
+      <RaceResult RaceID="27" TeamID="21" BoatID="21" RaceRank="16" RacePoints="16"/>
+      <RaceResult RaceID="29" TeamID="21" BoatID="21" RaceRank="23" RacePoints="23"/>
+      <RaceResult RaceID="31" TeamID="21" BoatID="21" RaceRank="15" RacePoints="15"/>
+      <RaceResult RaceID="15" TeamID="22" BoatID="22" RaceRank="21" RacePoints="21"/>
+      <RaceResult RaceID="17" TeamID="22" BoatID="22" RaceRank="21" RacePoints="21"/>
+      <RaceResult RaceID="19" TeamID="22" BoatID="22" Discard="1" RaceRank="23" RacePoints="23"/>
+      <RaceResult RaceID="21" TeamID="22" BoatID="22" RaceRank="22" RacePoints="22"/>
+      <RaceResult RaceID="23" TeamID="22" BoatID="22" RaceRank="23" RacePoints="23"/>
+      <RaceResult RaceID="25" TeamID="22" BoatID="22" RaceRank="19" RacePoints="19"/>
+      <RaceResult RaceID="27" TeamID="22" BoatID="22" RaceRank="12" RacePoints="12"/>
+      <RaceResult RaceID="29" TeamID="22" BoatID="22" RaceRank="16" RacePoints="16"/>
+      <RaceResult RaceID="31" TeamID="22" BoatID="22" RaceRank="6" RacePoints="6"/>
+      <RaceResult RaceID="15" TeamID="23" BoatID="23" Discard="1" RaceRank="23" RacePoints="23"/>
+      <RaceResult RaceID="17" TeamID="23" BoatID="23" RaceRank="7" RacePoints="7"/>
+      <RaceResult RaceID="19" TeamID="23" BoatID="23" RaceRank="21" RacePoints="21"/>
+      <RaceResult RaceID="21" TeamID="23" BoatID="23" RaceRank="19" RacePoints="19"/>
+      <RaceResult RaceID="23" TeamID="23" BoatID="23" RaceRank="6" RacePoints="6"/>
+      <RaceResult RaceID="25" TeamID="23" BoatID="23" RaceRank="23" RacePoints="23"/>
+      <RaceResult RaceID="27" TeamID="23" BoatID="23" RaceRank="22" RacePoints="22"/>
+      <RaceResult RaceID="29" TeamID="23" BoatID="23" RaceRank="22" RacePoints="22"/>
+      <RaceResult RaceID="31" TeamID="23" BoatID="23" RaceRank="23" RacePoints="23"/>
+      <RaceResult RaceID="15" TeamID="24" BoatID="24" Discard="1" RaceRank="24" RacePoints="24"/>
+      <RaceResult RaceID="17" TeamID="24" BoatID="24" RaceRank="22" RacePoints="22"/>
+      <RaceResult RaceID="19" TeamID="24" BoatID="24" RaceRank="8" RacePoints="8"/>
+      <RaceResult RaceID="21" TeamID="24" BoatID="24" RaceRank="17" RacePoints="17"/>
+      <RaceResult RaceID="23" TeamID="24" BoatID="24" RaceRank="21" RacePoints="21"/>
+      <RaceResult RaceID="25" TeamID="24" BoatID="24" RaceRank="24" RacePoints="24"/>
+      <RaceResult RaceID="27" TeamID="24" BoatID="24" RaceRank="23" RacePoints="23"/>
+      <RaceResult RaceID="29" TeamID="24" BoatID="24" RaceRank="14" RacePoints="14"/>
+      <RaceResult RaceID="31" TeamID="24" BoatID="24" RaceRank="22" RacePoints="22"/>
+      <RaceResult RaceID="15" TeamID="25" BoatID="25" RaceRank="25" RacePoints="25"/>
+      <RaceResult RaceID="17" TeamID="25" BoatID="25" RaceRank="23" RacePoints="23"/>
+      <RaceResult RaceID="19" TeamID="25" BoatID="25" RaceRank="19" RacePoints="19"/>
+      <RaceResult RaceID="21" TeamID="25" BoatID="25" RaceRank="24" RacePoints="24"/>
+      <RaceResult RaceID="23" TeamID="25" BoatID="25" RaceRank="24" RacePoints="24"/>
+      <RaceResult RaceID="25" TeamID="25" BoatID="25" RaceRank="13" RacePoints="13"/>
+      <RaceResult RaceID="27" TeamID="25" BoatID="25" Discard="1" RaceRank="00001" RacePoints="26" ScoreCode="RET"/>
+      <RaceResult RaceID="29" TeamID="25" BoatID="25" RaceRank="00001" RacePoints="26" ScoreCode="DNC"/>
+      <RaceResult RaceID="31" TeamID="25" BoatID="25" RaceRank="00001" RacePoints="26" ScoreCode="DNC"/>
+      <SeriesResult TeamID="1" NetPoints="31" TotalPoints="57" Rank="1" Tied="0"/>
+      <SeriesResult TeamID="2" NetPoints="47" TotalPoints="73" Rank="2" Tied="0"/>
+      <SeriesResult TeamID="3" NetPoints="51" TotalPoints="71" Rank="3" Tied="0"/>
+      <SeriesResult TeamID="4" NetPoints="59" TotalPoints="85" Rank="4" Tied="0"/>
+      <SeriesResult TeamID="5" NetPoints="60" TotalPoints="79" Rank="5" Tied="0"/>
+      <SeriesResult TeamID="6" NetPoints="61" TotalPoints="78" Rank="6" Tied="0"/>
+      <SeriesResult TeamID="7" NetPoints="61" TotalPoints="76" Rank="7" Tied="0"/>
+      <SeriesResult TeamID="8" NetPoints="66" TotalPoints="83" Rank="8" Tied="0"/>
+      <SeriesResult TeamID="9" NetPoints="70" TotalPoints="84" Rank="9" Tied="0"/>
+      <SeriesResult TeamID="10" NetPoints="82" TotalPoints="100" Rank="10" Tied="0"/>
+      <SeriesResult TeamID="11" NetPoints="86" TotalPoints="106" Rank="11" Tied="0"/>
+      <SeriesResult TeamID="12" NetPoints="88" TotalPoints="107" Rank="12" Tied="0"/>
+      <SeriesResult TeamID="13" NetPoints="96" TotalPoints="118" Rank="13" Tied="0"/>
+      <SeriesResult TeamID="14" NetPoints="97" TotalPoints="120" Rank="14" Tied="0"/>
+      <SeriesResult TeamID="15" NetPoints="104" TotalPoints="124" Rank="15" Tied="0"/>
+      <SeriesResult TeamID="16" NetPoints="107" TotalPoints="129" Rank="16" Tied="0"/>
+      <SeriesResult TeamID="17" NetPoints="111" TotalPoints="137" Rank="17" Tied="0"/>
+      <SeriesResult TeamID="18" NetPoints="122" TotalPoints="144" Rank="18" Tied="0"/>
+      <SeriesResult TeamID="19" NetPoints="127" TotalPoints="151" Rank="19" Tied="0"/>
+      <SeriesResult TeamID="20" NetPoints="127" TotalPoints="153" Rank="20" Tied="0"/>
+      <SeriesResult TeamID="21" NetPoints="128" TotalPoints="153" Rank="21" Tied="0"/>
+      <SeriesResult TeamID="22" NetPoints="140" TotalPoints="163" Rank="22" Tied="0"/>
+      <SeriesResult TeamID="23" NetPoints="143" TotalPoints="166" Rank="23" Tied="0"/>
+      <SeriesResult TeamID="24" NetPoints="151" TotalPoints="175" Rank="24" Tied="0"/>
+      <SeriesResult TeamID="25" NetPoints="180" TotalPoints="206" Rank="25" Tied="0"/>
+    </Division>
+  </Event>
+</SailingXRR>

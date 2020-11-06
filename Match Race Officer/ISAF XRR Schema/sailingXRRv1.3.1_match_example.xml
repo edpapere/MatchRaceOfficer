@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SailingXRR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DateTime="2010-02-16T19:56:21" Type="SailingXRR" Version="1.3.1" xsi:noNamespaceSchemaLocation="http://www.sailing.org/techpages/resources/xml/sailingXRR_v1.3.1.xsd">
+	<Person FamilyName="Kjellberg" GivenName="Anna" IFPersonID="sweak1" NOC="SWE" PersonID="sweak1"/>
+	<Person FamilyName="Källström" GivenName="Malin" IFPersonID="swemk" NOC="SWE" PersonID="swemk"/>
+	<Person FamilyName="Skarp" GivenName="Helena" IFPersonID="swehs2" NOC="SWE" PersonID="swehs2"/>
+	<Person FamilyName="Tunnicliffe" GivenName="Anna" IFPersonID="usaat1" NOC="USA" PersonID="usaat1"/>
+	<Person FamilyName="O'Bryan" GivenName="Molly" IFPersonID="usamo13" NOC="USA" PersonID="usamo13"/>
+	<Person FamilyName="Capozzi" GivenName="Debbie" IFPersonID="usadc11" NOC="USA" PersonID="usadc11"/>
+	<Person FamilyName="Wahlroos" GivenName="Chita" IFPersonID="fincw2" NOC="FIN" PersonID="fincw2"/>
+	<Person FamilyName="Klemetz" GivenName="Maria" IFPersonID="finmk5" NOC="FIN" PersonID="finmk5"/>
+	<Person FamilyName="Väresmaa" GivenName="Livia" IFPersonID="finlv1" NOC="FIN" PersonID="finlv1"/>
+	<Person FamilyName="Leroy" GivenName="Claire" IFPersonID="fracl3" NOC="FRA" PersonID="fracl3"/>
+	<Person FamilyName="Bertrand" GivenName="Elodie" IFPersonID="fraeb11" NOC="FRA" PersonID="fraeb11"/>
+	<Person FamilyName="Riou" GivenName="Marie" IFPersonID="framr3" NOC="FRA" PersonID="framr3"/>
+	<Person FamilyName="Skudina" GivenName="Ekaterina" IFPersonID="ruses1" NOC="RUS" PersonID="ruses1"/>
+	<Person FamilyName="Syuzeva" GivenName="Elena" IFPersonID="ruses5" NOC="RUS" PersonID="ruses5"/>
+	<Person FamilyName="Gaponovich" GivenName="Natalia" IFPersonID="rusng1" NOC="RUS" PersonID="rusng1"/>
+	<Person FamilyName="Tulloch" GivenName="Genny" IFPersonID="usagt8" NOC="USA" PersonID="usagt8"/>
+	<Person FamilyName="Manard" GivenName="Alice" IFPersonID="usaam7" NOC="USA" PersonID="usaam7"/>
+	<Person FamilyName="Vogen Shelton" GivenName="Karina" IFPersonID="usaks3" NOC="USA" PersonID="usaks3"/>
+	<Person FamilyName="Provan" GivenName="Jen" IFPersonID="canjp1" NOC="CAN" PersonID="canjp1"/>
+	<Person FamilyName="Abbott" GivenName="Katie" IFPersonID="canka3" NOC="CAN" PersonID="canka3"/>
+	<Person FamilyName="Prokop" GivenName="Joanne" IFPersonID="canjp10" NOC="CAN" PersonID="canjp10"/>
+	<Person FamilyName="Senfft" GivenName="Juliana" IFPersonID="brajs2" NOC="BRA" PersonID="brajs2"/>
+	<Person FamilyName="Nicolino de Sá" GivenName="Gabriela" IFPersonID="bragn3" NOC="BRA" PersonID="bragn3"/>
+	<Person FamilyName="Ginaid" GivenName="Adhara" IFPersonID="braag6" NOC="BRA" PersonID="braag6"/>
+	<Person FamilyName="Archer" GivenName="Katie" IFPersonID="gbrka7" NOC="GBR" PersonID="gbrka7"/>
+	<Person FamilyName="Muller" GivenName="Nicky" IFPersonID="gbrnm14" NOC="GBR" PersonID="gbrnm14"/>
+	<Person FamilyName="MARTEL" GivenName="LAUREN" IFPersonID="gbrlm" NOC="GBR" PersonID="gbrlm"/>
+	<Person FamilyName="Pilley-Lovell" GivenName="Katy" IFPersonID="usakl2" NOC="USA" PersonID="usakl2"/>
+	<Person FamilyName="Clement" GivenName="Corrie" IFPersonID="usacc6" NOC="USA" PersonID="usacc6"/>
+	<Person FamilyName="Buechler" GivenName="Nicole" IFPersonID="usanb11" NOC="USA" PersonID="usanb11"/>
+	<Person FamilyName="Kliger" GivenName="Linur" IFPersonID="isrlk2" NOC="ISR" PersonID="isrlk2"/>
+	<Person FamilyName="Leshem" GivenName="Linor" IFPersonID="isrll2" NOC="ISR" PersonID="isrll2"/>
+	<Person FamilyName="Botzer" GivenName="Noa" IFPersonID="isrnb3" NOC="ISR" PersonID="isrnb3"/>
+	<Person FamilyName="Meldgaard Pedersen" GivenName="Lotte" IFPersonID="denlm1" NOC="DEN" PersonID="denlm1"/>
+	<Person FamilyName="Boidin" GivenName="Susanne" IFPersonID="densb3" NOC="DEN" PersonID="densb3"/>
+	<Person FamilyName="Gramkov" GivenName="Tina Schmidt" IFPersonID="dents9" NOC="DEN" PersonID="dents9"/>
+	<Person FamilyName="Whitty" GivenName="Lucinda" IFPersonID="auslw4" NOC="AUS" PersonID="auslw4"/>
+	<Person FamilyName="Scrivenor" GivenName="Amanda" IFPersonID="ausas17" NOC="AUS" PersonID="ausas17"/>
+	<Person FamilyName="Eastwell" GivenName="Jessica" IFPersonID="ausje7" NOC="AUS" PersonID="ausje7"/>
+	<Person FamilyName="Macgregor" GivenName="Lucy" IFPersonID="gbrlm22" NOC="GBR" PersonID="gbrlm22"/>
+	<Person FamilyName="Lush" GivenName="Annie" IFPersonID="gbral22" NOC="GBR" PersonID="gbral22"/>
+	<Person FamilyName="Martin" GivenName="Ally" IFPersonID="gbram33" NOC="GBR" PersonID="gbram33"/>
+	<Person FamilyName="Mulder" GivenName="Mandy" IFPersonID="nedmm2" NOC="NED" PersonID="nedmm2"/>
+	<Person FamilyName="van Helden" GivenName="Marja" IFPersonID="nedmh1" NOC="NED" PersonID="nedmh1"/>
+	<Person FamilyName="Lievens" GivenName="Mijke" IFPersonID="nedml4" NOC="NED" PersonID="nedml4"/>
+	<Person FamilyName="Cameselle" GivenName="Margarita" IFPersonID="espmc12" NOC="ESP" PersonID="espmc12"/>
+	<Person FamilyName="BASTERRA MOYUA" GivenName="SOFIA" IFPersonID="espsb1" NOC="ESP" PersonID="espsb1"/>
+	<Person FamilyName="BARRERAS SANJURJO" GivenName="ESPERANZA" IFPersonID="espeb4" NOC="ESP" PersonID="espeb4"/>
+	<Person FamilyName="Souter" GivenName="Nicole" IFPersonID="ausns2" NOC="AUS" PersonID="ausns2"/>
+	<Person FamilyName="Jackson" GivenName="Stacey" IFPersonID="aussj2" NOC="AUS" PersonID="aussj2"/>
+	<Person FamilyName="Martin" GivenName="Ray" IFPersonID="ausrm1" NOC="AUS" PersonID="ausrm1"/>
+	<Person FamilyName="Groeneveld" GivenName="Renee" IFPersonID="nedrg1" NOC="NED" PersonID="nedrg1"/>
+	<Person FamilyName="Bes" GivenName="Annemieke" IFPersonID="nedab2" NOC="NED" PersonID="nedab2"/>
+	<Person FamilyName="van der Werf" GivenName="Brechtje" IFPersonID="nedbv6" NOC="NED" PersonID="nedbv6"/>
+	<Person FamilyName="Barkow" GivenName="Sally" IFPersonID="usasb12" NOC="USA" PersonID="usasb12"/>
+	<Person FamilyName="Pettibone" GivenName="Katie" IFPersonID="usakp5" NOC="USA" PersonID="usakp5"/>
+	<Person FamilyName="Breault" GivenName="Nicole" IFPersonID="usanb20" NOC="USA" PersonID="usanb20"/>
+	<Person FamilyName="Osborne" GivenName="Samantha" IFPersonID="nzlso1" NOC="NZL" PersonID="nzlso1"/>
+	<Person FamilyName="Hansen" GivenName="Jenna" IFPersonID="nzljh9" NOC="NZL" PersonID="nzljh9"/>
+	<Person FamilyName="Smeal" GivenName="Raynor" IFPersonID="nzlrs2" NOC="NZL" PersonID="nzlrs2"/>
+	<Person FamilyName="Hahlbrock" GivenName="Silke" IFPersonID="gersh6" NOC="GER" PersonID="gersh6"/>
+	<Person FamilyName="Hahlbrock" GivenName="Maren" IFPersonID="germh" NOC="GER" PersonID="germh"/>
+	<Person FamilyName="Juliane" GivenName="Wolf" IFPersonID="gerjw2" NOC="GER" PersonID="gerjw2"/>
+	<Person FamilyName="Ward" GivenName="Susanne" IFPersonID="densw2" NOC="DEN" PersonID="densw2"/>
+	<Person FamilyName="Refn" GivenName="Christina Sneholt" IFPersonID="densc2" NOC="DEN" PersonID="densc2"/>
+	<Person FamilyName="Munk-Hansen" GivenName="Anne-Sofie" IFPersonID="denam1" NOC="DEN" PersonID="denam1"/>
+	<Person FamilyName="Zimmerman" GivenName="Tania" IFPersonID="pertz2" NOC="PER" PersonID="pertz2"/>
+	<Person FamilyName="ZIMMERMANN" GivenName="Stephanie" IFPersonID="persz2" NOC="PER" PersonID="persz2"/>
+	<Person FamilyName="ARRIBAS" GivenName="CRISTINA" IFPersonID="perca1" NOC="PER" PersonID="perca1"/>
+	<Person FamilyName="Schuemann" GivenName="Ulrike" IFPersonID="gerus1" NOC="GER" PersonID="gerus1"/>
+	<Person FamilyName="Kadelbach" GivenName="Kathrin" IFPersonID="gerkk1" NOC="GER" PersonID="gerkk1"/>
+	<Person FamilyName="Icyda" GivenName="Lee" IFPersonID="usali3" NOC="USA" PersonID="usali3"/>
+	<Team Gender="Women" NOC="SWE" TeamID="5" TeamName="Kjellberg" BoatID="5">
+		<Crew PersonID="sweak1" Position="S"/>
+		<Crew PersonID="swemk" Position="C"/>
+		<Crew PersonID="swehs2" Position="C"/>
+	</Team>
+	<Boat BoatID="5" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="USA" TeamID="7" TeamName="Tunnicliffe" BoatID="7">
+		<Crew PersonID="usaat1" Position="S"/>
+		<Crew PersonID="usamo13" Position="C"/>
+		<Crew PersonID="usadc11" Position="C"/>
+	</Team>
+	<Boat BoatID="7" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="FIN" TeamID="20" TeamName="Wahlroos" BoatID="20">
+		<Crew PersonID="FINCW2" Position="S"/>
+		<Crew PersonID="FINMK5" Position="C"/>
+		<Crew PersonID="FINLV1" Position="C"/>
+	</Team>
+	<Boat BoatID="20" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="FRA" TeamID="1" TeamName="Leroy" BoatID="1">
+		<Crew PersonID="fracl3" Position="S"/>
+		<Crew PersonID="FRAEB11" Position="C"/>
+		<Crew PersonID="framr3" Position="C"/>
+	</Team>
+	<Boat BoatID="1" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="RUS" TeamID="15" TeamName="Skudina" BoatID="15">
+		<Crew PersonID="RUSES1" Position="S"/>
+		<Crew PersonID="RUSES5" Position="C"/>
+		<Crew PersonID="RUSNG1" Position="C"/>
+	</Team>
+	<Boat BoatID="15" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="USA" TeamID="9" TeamName="Tulloch" BoatID="9">
+		<Crew PersonID="USAGT8" Position="S"/>
+		<Crew PersonID="USAAM7" Position="C"/>
+		<Crew PersonID="USAKS3" Position="C"/>
+	</Team>
+	<Boat BoatID="9" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="CAN" TeamID="19" TeamName="Provan" BoatID="19">
+		<Crew PersonID="canjp1" Position="S"/>
+		<Crew PersonID="CANKA3" Position="C"/>
+		<Crew PersonID="CANJP10" Position="C"/>
+	</Team>
+	<Boat BoatID="19" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="BRA" TeamID="13" TeamName="Senfft" BoatID="13">
+		<Crew PersonID="BRAJS2" Position="S"/>
+		<Crew PersonID="BRAGN3" Position="C"/>
+		<Crew PersonID="BRAAG6" Position="C"/>
+	</Team>
+	<Boat BoatID="13" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="GBR" TeamID="22" TeamName="Archer" BoatID="22">
+		<Crew PersonID="GBRKA7" Position="S"/>
+		<Crew PersonID="GBRNM14" Position="C"/>
+		<Crew PersonID="GBRLM" Position="C"/>
+	</Team>
+	<Boat BoatID="22" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="USA" TeamID="14" TeamName="Lovell" BoatID="14">
+		<Crew PersonID="USAKL2" Position="S"/>
+		<Crew PersonID="USACC6" Position="C"/>
+		<Crew PersonID="USANB11" Position="C"/>
+	</Team>
+	<Boat BoatID="14" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="ISR" TeamID="24" TeamName="Kliger" BoatID="24">
+		<Crew PersonID="ISRLK2" Position="S"/>
+		<Crew PersonID="ISRLL2" Position="C"/>
+		<Crew PersonID="ISRnb3" Position="C"/>
+	</Team>
+	<Boat BoatID="24" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="DEN" TeamID="6" TeamName="Meldgaard" BoatID="6">
+		<Crew PersonID="DENLM1" Position="S"/>
+		<Crew PersonID="DENSB3" Position="C"/>
+		<Crew PersonID="DENTS9" Position="C"/>
+	</Team>
+	<Boat BoatID="6" BoatName="" SailNumber="6"/>
+	<Team Gender="Women" NOC="AUS" TeamID="12" TeamName="Whitty" BoatID="12">
+		<Crew PersonID="AUSLW4" Position="S"/>
+		<Crew PersonID="AUSAS17" Position="C"/>
+		<Crew PersonID="ausje7" Position="C"/>
+	</Team>
+	<Boat BoatID="12" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="GBR" TeamID="2" TeamName="Macgregor" BoatID="2">
+		<Crew PersonID="GBRLM22" Position="S"/>
+		<Crew PersonID="GBRAL22" Position="C"/>
+		<Crew PersonID="gbram33" Position="C"/>
+	</Team>
+	<Boat BoatID="2" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="NED" TeamID="23" TeamName="Mulder" BoatID="23">
+		<Crew PersonID="NEDMM2" Position="S"/>
+		<Crew PersonID="NEDMH1" Position="C"/>
+		<Crew PersonID="NEDML4" Position="C"/>
+	</Team>
+	<Boat BoatID="23" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="ESP" TeamID="18" TeamName="Cameselle" BoatID="18">
+		<Crew PersonID="ESPMC12" Position="S"/>
+		<Crew PersonID="ESPSB1" Position="C"/>
+		<Crew PersonID="ESPEB4" Position="C"/>
+	</Team>
+	<Boat BoatID="18" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="AUS" TeamID="3" TeamName="Souter" BoatID="3">
+		<Crew PersonID="AUSNS2" Position="S"/>
+		<Crew PersonID="AUSSJ2" Position="C"/>
+		<Crew PersonID="ausrm1" Position="C"/>
+	</Team>
+	<Boat BoatID="3" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="NED" TeamID="8" TeamName="Groeneveld" BoatID="8">
+		<Crew PersonID="NEDRG1" Position="S"/>
+		<Crew PersonID="NEDAB2" Position="C"/>
+		<Crew PersonID="NEDBV6" Position="C"/>
+	</Team>
+	<Boat BoatID="8" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="USA" TeamID="11" TeamName="Barkow" BoatID="11">
+		<Crew PersonID="usasb12" Position="S"/>
+		<Crew PersonID="USAKP5" Position="C"/>
+		<Crew PersonID="USANB20" Position="C"/>
+	</Team>
+	<Boat BoatID="11" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="NZL" TeamID="10" TeamName="Osborne" BoatID="10">
+		<Crew PersonID="nzlso1" Position="S"/>
+		<Crew PersonID="nzljh9" Position="C"/>
+		<Crew PersonID="nzlrs2" Position="C"/>
+	</Team>
+	<Boat BoatID="10" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="GER" TeamID="4" TeamName="Hahlbrock" BoatID="4">
+		<Crew PersonID="GERSH6" Position="S"/>
+		<Crew PersonID="GERMH" Position="C"/>
+		<Crew PersonID="GERJW2" Position="C"/>
+	</Team>
+	<Boat BoatID="4" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="DEN" TeamID="16" TeamName="Ward" BoatID="16">
+		<Crew PersonID="DENSW2" Position="S"/>
+		<Crew PersonID="DENSC2" Position="C"/>
+		<Crew PersonID="DENAM1" Position="C"/>
+	</Team>
+	<Boat BoatID="16" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="PER" TeamID="21" TeamName="Zimmerman" BoatID="21">
+		<Crew PersonID="PERTZ2" Position="S"/>
+		<Crew PersonID="PERSZ2" Position="C"/>
+		<Crew PersonID="PERCA1" Position="C"/>
+	</Team>
+	<Boat BoatID="21" BoatName="" SailNumber=""/>
+	<Team Gender="Women" NOC="GER" TeamID="17" TeamName="Schuemann" BoatID="17">
+		<Crew PersonID="GERUS1" Position="S"/>
+		<Crew PersonID="GERKK1" Position="C"/>
+		<Crew PersonID="usali3" Position="C"/>
+	</Team>
+	<Boat BoatID="17" BoatName="" SailNumber=""/>
+	
+	<Event EventID="24" IFEventID="IFRGT-9756" Title="Women's Keelboat Match Racing" IFUploadCode="TESTING">
+		<Race RaceID="1" RaceNumber="1" Stage="1" Flight="A1" Match="1"/>
+		<Race RaceID="2" RaceNumber="2" Stage="1" Flight="A1" Match="2"/>
+		<Race RaceID="3" RaceNumber="3" Stage="1" Flight="A1" Match="3"/>
+		<Race RaceID="4" RaceNumber="4" Stage="1" Flight="A1" Match="4"/>
+		<Race RaceID="5" RaceNumber="5" Stage="1" Flight="A2" Match="1"/>
+		<Race RaceID="6" RaceNumber="6" Stage="1" Flight="A2" Match="2"/>
+		<Race RaceID="7" RaceNumber="7" Stage="1" Flight="A2" Match="3"/>
+		<Race RaceID="8" RaceNumber="8" Stage="1" Flight="A2" Match="4"/>
+		<Race RaceID="9" RaceNumber="9" Stage="1" Flight="A3" Match="1"/>
+		<Race RaceID="10" RaceNumber="10" Stage="1" Flight="A3" Match="2"/>
+		<Race RaceID="11" RaceNumber="11" Stage="1" Flight="A3" Match="3"/>
+		<Race RaceID="12" RaceNumber="12" Stage="1" Flight="A3" Match="4"/>
+		<Race RaceID="13" RaceNumber="13" Stage="1" Flight="A4" Match="1"/>
+		<Race RaceID="14" RaceNumber="14" Stage="1" Flight="A4" Match="2"/>
+		<Race RaceID="15" RaceNumber="15" Stage="1" Flight="A4" Match="3"/>
+		<Race RaceID="16" RaceNumber="16" Stage="1" Flight="A4" Match="4"/>
+		<Race RaceID="17" RaceNumber="17" Stage="1" Flight="A5" Match="1"/>
+		<Race RaceID="18" RaceNumber="18" Stage="1" Flight="A5" Match="2"/>
+		<Race RaceID="19" RaceNumber="19" Stage="1" Flight="A5" Match="3"/>
+		<Race RaceID="20" RaceNumber="20" Stage="1" Flight="A5" Match="4"/>
+		<Race RaceID="21" RaceNumber="21" Stage="1" Flight="A6" Match="1"/>
+		<Race RaceID="22" RaceNumber="22" Stage="1" Flight="A6" Match="2"/>
+		<Race RaceID="23" RaceNumber="23" Stage="1" Flight="A6" Match="3"/>
+		<Race RaceID="24" RaceNumber="24" Stage="1" Flight="A6" Match="4"/>
+		<Race RaceID="25" RaceNumber="25" Stage="1" Flight="A7" Match="1"/>
+		<Race RaceID="26" RaceNumber="26" Stage="1" Flight="A7" Match="2"/>
+		<Race RaceID="27" RaceNumber="27" Stage="1" Flight="A7" Match="3"/>
+		<Race RaceID="28" RaceNumber="28" Stage="1" Flight="A7" Match="4"/>
+		<Race RaceID="29" RaceNumber="29" Stage="1" Flight="B1" Match="1"/>
+		<Race RaceID="30" RaceNumber="30" Stage="1" Flight="B1" Match="2"/>
+		<Race RaceID="31" RaceNumber="31" Stage="1" Flight="B1" Match="3"/>
+		<Race RaceID="32" RaceNumber="32" Stage="1" Flight="B1" Match="4"/>
+		<Race RaceID="33" RaceNumber="33" Stage="1" Flight="B2" Match="1"/>
+		<Race RaceID="34" RaceNumber="34" Stage="1" Flight="B2" Match="2"/>
+		<Race RaceID="35" RaceNumber="35" Stage="1" Flight="B2" Match="3"/>
+		<Race RaceID="36" RaceNumber="36" Stage="1" Flight="B2" Match="4"/>
+		<Race RaceID="37" RaceNumber="37" Stage="1" Flight="B3" Match="1"/>
+		<Race RaceID="38" RaceNumber="38" Stage="1" Flight="B3" Match="2"/>
+		<Race RaceID="39" RaceNumber="39" Stage="1" Flight="B3" Match="3"/>
+		<Race RaceID="40" RaceNumber="40" Stage="1" Flight="B3" Match="4"/>
+		<Race RaceID="41" RaceNumber="41" Stage="1" Flight="B4" Match="1"/>
+		<Race RaceID="42" RaceNumber="42" Stage="1" Flight="B4" Match="2"/>
+		<Race RaceID="43" RaceNumber="43" Stage="1" Flight="B4" Match="3"/>
+		<Race RaceID="44" RaceNumber="44" Stage="1" Flight="B4" Match="4"/>
+		<Race RaceID="45" RaceNumber="45" Stage="1" Flight="B5" Match="1"/>
+		<Race RaceID="46" RaceNumber="46" Stage="1" Flight="B5" Match="2"/>
+		<Race RaceID="47" RaceNumber="47" Stage="1" Flight="B5" Match="3"/>
+		<Race RaceID="48" RaceNumber="48" Stage="1" Flight="B5" Match="4"/>
+		<Race RaceID="49" RaceNumber="49" Stage="1" Flight="B6" Match="1"/>
+		<Race RaceID="50" RaceNumber="50" Stage="1" Flight="B6" Match="2"/>
+		<Race RaceID="51" RaceNumber="51" Stage="1" Flight="B6" Match="3"/>
+		<Race RaceID="52" RaceNumber="52" Stage="1" Flight="B6" Match="4"/>
+		<Race RaceID="53" RaceNumber="53" Stage="1" Flight="B7" Match="1"/>
+		<Race RaceID="54" RaceNumber="54" Stage="1" Flight="B7" Match="2"/>
+		<Race RaceID="55" RaceNumber="55" Stage="1" Flight="B7" Match="3"/>
+		<Race RaceID="56" RaceNumber="56" Stage="1" Flight="B7" Match="4"/>
+		<Race RaceID="57" RaceNumber="57" Stage="1" Flight="C1" Match="1"/>
+		<Race RaceID="58" RaceNumber="58" Stage="1" Flight="C1" Match="2"/>
+		<Race RaceID="59" RaceNumber="59" Stage="1" Flight="C1" Match="3"/>
+		<Race RaceID="60" RaceNumber="60" Stage="1" Flight="C1" Match="4"/>
+		<Race RaceID="61" RaceNumber="61" Stage="1" Flight="C2" Match="1"/>
+		<Race RaceID="62" RaceNumber="62" Stage="1" Flight="C2" Match="2"/>
+		<Race RaceID="63" RaceNumber="63" Stage="1" Flight="C2" Match="3"/>
+		<Race RaceID="64" RaceNumber="64" Stage="1" Flight="C2" Match="4"/>
+		<Race RaceID="65" RaceNumber="65" Stage="1" Flight="C3" Match="1"/>
+		<Race RaceID="66" RaceNumber="66" Stage="1" Flight="C3" Match="2"/>
+		<Race RaceID="67" RaceNumber="67" Stage="1" Flight="C3" Match="3"/>
+		<Race RaceID="68" RaceNumber="68" Stage="1" Flight="C3" Match="4"/>
+		<Race RaceID="69" RaceNumber="69" Stage="1" Flight="C4" Match="1"/>
+		<Race RaceID="70" RaceNumber="70" Stage="1" Flight="C4" Match="2"/>
+		<Race RaceID="71" RaceNumber="71" Stage="1" Flight="C4" Match="3"/>
+		<Race RaceID="72" RaceNumber="72" Stage="1" Flight="C4" Match="4"/>
+		<Race RaceID="73" RaceNumber="73" Stage="1" Flight="C5" Match="1"/>
+		<Race RaceID="74" RaceNumber="74" Stage="1" Flight="C5" Match="2"/>
+		<Race RaceID="75" RaceNumber="75" Stage="1" Flight="C5" Match="3"/>
+		<Race RaceID="76" RaceNumber="76" Stage="1" Flight="C5" Match="4"/>
+		<Race RaceID="77" RaceNumber="77" Stage="1" Flight="C6" Match="1"/>
+		<Race RaceID="78" RaceNumber="78" Stage="1" Flight="C6" Match="2"/>
+		<Race RaceID="79" RaceNumber="79" Stage="1" Flight="C6" Match="3"/>
+		<Race RaceID="80" RaceNumber="80" Stage="1" Flight="C6" Match="4"/>
+		<Race RaceID="81" RaceNumber="81" Stage="1" Flight="C7" Match="1"/>
+		<Race RaceID="82" RaceNumber="82" Stage="1" Flight="C7" Match="2"/>
+		<Race RaceID="83" RaceNumber="83" Stage="1" Flight="C7" Match="3"/>
+		<Race RaceID="84" RaceNumber="84" Stage="1" Flight="C7" Match="4"/>
+		<Race RaceID="164" RaceNumber="1" Stage="6" Flight="SF1" Match="1"/>
+		<Race RaceID="165" RaceNumber="2" Stage="6" Flight="SF1" Match="2"/>
+		<Race RaceID="166" RaceNumber="3" Stage="6" Flight="SF2" Match="1"/>
+		<Race RaceID="167" RaceNumber="4" Stage="6" Flight="SF2" Match="2"/>
+		<Race RaceID="168" RaceNumber="5" Stage="6" Flight="SF3" Match="1"/>
+		<Race RaceID="169" RaceNumber="6" Stage="6" Flight="SF3" Match="2"/>
+		<Race RaceID="170" RaceNumber="7" Stage="6" Flight="SF4" Match="2"/>
+		<Race RaceID="171" RaceNumber="8" Stage="6" Flight="SF5" Match="2"/>
+		<Race RaceID="176" RaceNumber="9" Stage="7" Flight="F1" Match="1"/>
+		<Race RaceID="177" RaceNumber="10" Stage="7" Flight="F2" Match="1"/>
+		<Race RaceID="178" RaceNumber="11" Stage="7" Flight="F3" Match="1"/>
+		<Race RaceID="179" RaceNumber="12" Stage="7" Flight="F4" Match="1"/>
+		<Race RaceID="180" RaceNumber="13" Stage="7" Flight="F5" Match="1"/>
+		<Race RaceID="181" RaceNumber="14" Stage="7" Flight="PF1" Match="1"/>
+		<Race RaceID="182" RaceNumber="15" Stage="7" Flight="PF2" Match="1"/>
+		<Race RaceID="183" RaceNumber="16" Stage="7" Flight="PF3" Match="1"/>
+		<Division DivisionID="1" Gender="Women" IFClassID="E6M" Type="MatchRace" Title="Eliott 6m">
+			<RaceResult TeamID="1" MREntrySide="Port" RaceID="164" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="1" MREntrySide="Port" RaceID="182" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="1" MREntrySide="Port" RaceID="64" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="1" MREntrySide="Port" RaceID="67" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="1" MREntrySide="Port" RaceID="82" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="1" MREntrySide="Starboard" RaceID="1" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="1" MREntrySide="Starboard" RaceID="166" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="1" MREntrySide="Starboard" RaceID="168" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="1" MREntrySide="Starboard" RaceID="181" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="1" MREntrySide="Starboard" RaceID="183" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="1" MREntrySide="Starboard" RaceID="2" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="1" MREntrySide="Starboard" RaceID="3" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="1" MREntrySide="Starboard" RaceID="4" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="10" MREntrySide="Port" RaceID="11" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="10" MREntrySide="Port" RaceID="14" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="10" MREntrySide="Port" RaceID="33" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="10" MREntrySide="Starboard" RaceID="37" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="10" MREntrySide="Starboard" RaceID="38" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="10" MREntrySide="Starboard" RaceID="39" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="10" MREntrySide="Starboard" RaceID="40" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="11" MREntrySide="Port" RaceID="18" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="11" MREntrySide="Port" RaceID="29" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="11" MREntrySide="Port" RaceID="7" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="11" MREntrySide="Starboard" RaceID="41" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="11" MREntrySide="Starboard" RaceID="42" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="11" MREntrySide="Starboard" RaceID="43" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="11" MREntrySide="Starboard" RaceID="44" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="12" MREntrySide="Port" RaceID="22" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="12" MREntrySide="Port" RaceID="25" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="12" MREntrySide="Port" RaceID="3" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="12" MREntrySide="Starboard" RaceID="45" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="12" MREntrySide="Starboard" RaceID="46" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="12" MREntrySide="Starboard" RaceID="47" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="12" MREntrySide="Starboard" RaceID="48" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="13" MREntrySide="Port" RaceID="23" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="13" MREntrySide="Port" RaceID="4" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="13" MREntrySide="Port" RaceID="45" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="13" MREntrySide="Port" RaceID="84" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="13" MREntrySide="Starboard" RaceID="49" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="13" MREntrySide="Starboard" RaceID="50" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="13" MREntrySide="Starboard" RaceID="51" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="14" MREntrySide="Port" RaceID="19" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="14" MREntrySide="Port" RaceID="41" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="14" MREntrySide="Port" RaceID="8" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="14" MREntrySide="Port" RaceID="81" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="14" MREntrySide="Starboard" RaceID="52" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="14" MREntrySide="Starboard" RaceID="53" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="14" MREntrySide="Starboard" RaceID="54" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="15" MREntrySide="Port" RaceID="12" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="15" MREntrySide="Port" RaceID="15" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="15" MREntrySide="Port" RaceID="37" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="15" MREntrySide="Port" RaceID="78" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="15" MREntrySide="Starboard" RaceID="55" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="15" MREntrySide="Starboard" RaceID="56" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="15" MREntrySide="Starboard" RaceID="57" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="16" MREntrySide="Port" RaceID="16" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="16" MREntrySide="Port" RaceID="34" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="16" MREntrySide="Port" RaceID="38" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="16" MREntrySide="Port" RaceID="56" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="16" MREntrySide="Starboard" RaceID="58" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="16" MREntrySide="Starboard" RaceID="59" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="16" MREntrySide="Starboard" RaceID="60" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="17" MREntrySide="Port" RaceID="20" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="17" MREntrySide="Port" RaceID="30" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="17" MREntrySide="Port" RaceID="42" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="17" MREntrySide="Port" RaceID="53" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="17" MREntrySide="Starboard" RaceID="61" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="17" MREntrySide="Starboard" RaceID="62" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="17" MREntrySide="Starboard" RaceID="63" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="18" MREntrySide="Port" RaceID="24" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="18" MREntrySide="Port" RaceID="26" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="18" MREntrySide="Port" RaceID="46" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="18" MREntrySide="Port" RaceID="50" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="18" MREntrySide="Starboard" RaceID="64" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="18" MREntrySide="Starboard" RaceID="65" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="18" MREntrySide="Starboard" RaceID="66" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="19" MREntrySide="Port" RaceID="27" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="19" MREntrySide="Port" RaceID="47" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="19" MREntrySide="Port" RaceID="51" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="19" MREntrySide="Port" RaceID="65" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="19" MREntrySide="Starboard" RaceID="67" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="19" MREntrySide="Starboard" RaceID="68" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="19" MREntrySide="Starboard" RaceID="69" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="2" MREntrySide="Port" RaceID="166" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="2" MREntrySide="Port" RaceID="168" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="2" MREntrySide="Port" RaceID="177" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="2" MREntrySide="Port" RaceID="179" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="2" MREntrySide="Port" RaceID="61" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="2" MREntrySide="Port" RaceID="70" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="2" MREntrySide="Port" RaceID="79" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="2" MREntrySide="Starboard" RaceID="164" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="2" MREntrySide="Starboard" RaceID="176" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="2" MREntrySide="Starboard" RaceID="178" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="2" MREntrySide="Starboard" RaceID="180" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="2" MREntrySide="Starboard" RaceID="5" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="2" MREntrySide="Starboard" RaceID="6" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="2" MREntrySide="Starboard" RaceID="7" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="2" MREntrySide="Starboard" RaceID="8" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="20" MREntrySide="Port" RaceID="31" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="20" MREntrySide="Port" RaceID="43" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="20" MREntrySide="Port" RaceID="54" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="20" MREntrySide="Port" RaceID="62" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="20" MREntrySide="Starboard" RaceID="70" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="20" MREntrySide="Starboard" RaceID="71" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="20" MREntrySide="Starboard" RaceID="72" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="21" MREntrySide="Port" RaceID="35" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="21" MREntrySide="Port" RaceID="39" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="21" MREntrySide="Port" RaceID="57" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="21" MREntrySide="Port" RaceID="59" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="21" MREntrySide="Starboard" RaceID="73" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="21" MREntrySide="Starboard" RaceID="74" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="21" MREntrySide="Starboard" RaceID="75" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="22" MREntrySide="Port" RaceID="36" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="22" MREntrySide="Port" RaceID="40" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="22" MREntrySide="Port" RaceID="60" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="22" MREntrySide="Port" RaceID="75" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="22" MREntrySide="Starboard" RaceID="76" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="22" MREntrySide="Starboard" RaceID="77" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="22" MREntrySide="Starboard" RaceID="78" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="23" MREntrySide="Port" RaceID="32" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="23" MREntrySide="Port" RaceID="44" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="23" MREntrySide="Port" RaceID="63" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="23" MREntrySide="Port" RaceID="72" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="23" MREntrySide="Starboard" RaceID="79" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="23" MREntrySide="Starboard" RaceID="80" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="23" MREntrySide="Starboard" RaceID="81" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="24" MREntrySide="Port" RaceID="28" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="24" MREntrySide="Port" RaceID="48" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="24" MREntrySide="Port" RaceID="66" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="24" MREntrySide="Port" RaceID="69" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="24" MREntrySide="Starboard" RaceID="82" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="24" MREntrySide="Starboard" RaceID="83" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="24" MREntrySide="Starboard" RaceID="84" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="3" MREntrySide="Port" RaceID="165" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="3" MREntrySide="Port" RaceID="169" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="3" MREntrySide="Port" RaceID="171" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="3" MREntrySide="Port" RaceID="181" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="3" MREntrySide="Port" RaceID="183" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="3" MREntrySide="Port" RaceID="58" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="3" MREntrySide="Port" RaceID="73" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="3" MREntrySide="Port" RaceID="76" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="3" MREntrySide="Starboard" RaceID="10" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="3" MREntrySide="Starboard" RaceID="11" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="3" MREntrySide="Starboard" RaceID="12" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="3" MREntrySide="Starboard" RaceID="167" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="3" MREntrySide="Starboard" RaceID="170" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="3" MREntrySide="Starboard" RaceID="182" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="3" MREntrySide="Starboard" RaceID="9" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="4" MREntrySide="Port" RaceID="74" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="4" MREntrySide="Port" RaceID="77" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="4" MREntrySide="Port" RaceID="9" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="4" MREntrySide="Starboard" RaceID="13" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="4" MREntrySide="Starboard" RaceID="14" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="4" MREntrySide="Starboard" RaceID="15" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="4" MREntrySide="Starboard" RaceID="16" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="5" MREntrySide="Port" RaceID="5" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="5" MREntrySide="Port" RaceID="71" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="5" MREntrySide="Port" RaceID="80" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="5" MREntrySide="Starboard" RaceID="17" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="5" MREntrySide="Starboard" RaceID="18" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="5" MREntrySide="Starboard" RaceID="19" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="5" MREntrySide="Starboard" RaceID="20" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="6" MREntrySide="Port" RaceID="1" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="6" MREntrySide="Port" RaceID="68" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="6" MREntrySide="Port" RaceID="83" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="6" MREntrySide="Starboard" RaceID="21" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="6" MREntrySide="Starboard" RaceID="22" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="6" MREntrySide="Starboard" RaceID="23" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="6" MREntrySide="Starboard" RaceID="24" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Port" RaceID="167" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="7" MREntrySide="Port" RaceID="170" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Port" RaceID="176" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Port" RaceID="178" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="7" MREntrySide="Port" RaceID="180" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="7" MREntrySide="Port" RaceID="2" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Port" RaceID="21" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Port" RaceID="49" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="7" MREntrySide="Starboard" RaceID="165" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Starboard" RaceID="169" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Starboard" RaceID="171" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Starboard" RaceID="177" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Starboard" RaceID="179" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Starboard" RaceID="25" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Starboard" RaceID="26" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Starboard" RaceID="27" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="7" MREntrySide="Starboard" RaceID="28" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="8" MREntrySide="Port" RaceID="17" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="8" MREntrySide="Port" RaceID="52" RacePoints="1" RaceRank="2"/>
+			<RaceResult TeamID="8" MREntrySide="Port" RaceID="6" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="8" MREntrySide="Starboard" RaceID="29" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="8" MREntrySide="Starboard" RaceID="30" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="8" MREntrySide="Starboard" RaceID="31" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="8" MREntrySide="Starboard" RaceID="32" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="9" MREntrySide="Port" RaceID="10" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="9" MREntrySide="Port" RaceID="13" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="9" MREntrySide="Port" RaceID="55" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="9" MREntrySide="Starboard" RaceID="33" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="9" MREntrySide="Starboard" RaceID="34" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="9" MREntrySide="Starboard" RaceID="35" RacePoints="0" RaceRank="1"/>
+			<RaceResult TeamID="9" MREntrySide="Starboard" RaceID="36" RacePoints="0" RaceRank="1"/>
+			<SeriesResult TeamID="1" Rank="3"/>
+			<SeriesResult TeamID="10" Rank="7"/>
+			<SeriesResult TeamID="11" Rank="6"/>
+			<SeriesResult TeamID="12" Rank="5"/>
+			<SeriesResult TeamID="13" Rank="20"/>
+			<SeriesResult TeamID="14" Rank="24"/>
+			<SeriesResult TeamID="15" Rank="19"/>
+			<SeriesResult TeamID="16" Rank="13"/>
+			<SeriesResult TeamID="17" Rank="15"/>
+			<SeriesResult TeamID="18" Rank="21"/>
+			<SeriesResult TeamID="19" Rank="17"/>
+			<SeriesResult TeamID="2" Rank="2"/>
+			<SeriesResult TeamID="20" Rank="23"/>
+			<SeriesResult TeamID="21" Rank="22"/>
+			<SeriesResult TeamID="22" Rank="16"/>
+			<SeriesResult TeamID="23" Rank="14"/>
+			<SeriesResult TeamID="24" Rank="18"/>
+			<SeriesResult TeamID="3" Rank="4"/>
+			<SeriesResult TeamID="4" Rank="10"/>
+			<SeriesResult TeamID="5" Rank="12"/>
+			<SeriesResult TeamID="6" Rank="8"/>
+			<SeriesResult TeamID="7" Rank="1"/>
+			<SeriesResult TeamID="8" Rank="11"/>
+			<SeriesResult TeamID="9" Rank="9"/>
+		</Division>
+	</Event>
+</SailingXRR>

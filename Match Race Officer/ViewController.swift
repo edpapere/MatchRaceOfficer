@@ -24,6 +24,13 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var splash: UIImageView!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var button: UIButton!
+    
+    var countButtonPress = 0 {
+        didSet {
+            updateButton()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,8 +56,52 @@ class ViewController: UIViewController, UITableViewDataSource {
         tableView.backgroundColor = .cyan
         tableView.dataSource = self
         
+        updateButton()
+        
     }
+    
+    fileprivate func updateButton() {
+        button.setTitle("Count: \(countButtonPress)", for: [])
+    }
+    
+    @IBAction func buttonPress(_ sender: UIButton) {
+        countButtonPress += 1
+     //   updateButton()
+     //   print(#line,#function,"Button pressed")
+    }
+    
+    @IBAction func segmentSelected(_ sender: UISegmentedControl) {
+        print(#line,#function,"Segmented control pressed: \(sender.selectedSegmentIndex)")
+        switch sender.selectedSegmentIndex {
+        case 0:
+            countButtonPress = 0
+        case 1:
+            countButtonPress -= 1
+        case 2:
+            countButtonPress += 1
+        default:
+            fatalError("Unknown index of Segmented control: \(sender.selectedSegmentIndex) at \(#line) \(#function)")
+        }
+    }
+    
+    @IBAction func dataEntered(_ sender: UITextField) {
+        print(#line, #function, sender.tag, sender.text ?? "nil")
+    }
+    
 
-
+    @IBAction func sliverValueChanged(_ sender: UISlider) {
+        sender.value = Float( 25 * Int(sender.value / 25) )
+        print(#line,#function,sender.value)
+    }
+    
+    @IBAction func switchToggled(_ sender: UISwitch) {
+        print(#line,#function, sender.isOn)
+        view.backgroundColor = sender.isOn ? .white : .cyan
+    }
+    
+    @IBAction func datePicked(_ sender: UIDatePicker) {
+        print(#line,#function, sender.date)
+    }
+    
 }
 
